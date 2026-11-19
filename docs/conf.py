@@ -12,7 +12,7 @@ sys.path.append(os.path.abspath("./_ext"))
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "ClassRoomPlugins"
+project = "PC-MultiMedia"
 copyright = "2026-7, GMC"
 author = "GMC"
 
@@ -34,12 +34,7 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx_togglebutton",
     "sphinx_design",
-    "noisemonitor.noisemonitor",  # custom directive
-    "seatingplan.seatingplan",  # custom directive
-    "studentgroups.studentgroups",  # custom directive
-    "namepicker.namepicker",  # custom directive
     "christmas.christmas",  # custom directive
-    "lockers.lockers",  # custom directive
 ]
 
 

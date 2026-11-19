@@ -24,7 +24,7 @@ from pathlib import Path
 #   - a "docs" folder next to this script, or
 #   - the folder this script is in (if the script is inside docs)
 # Or give a full path,
-DOCS_FOLDER = r"C:\Users\gmccarthy\Documents\PC_RTD_GITHUB_resources\ClassRoomPlugins\docs"
+DOCS_FOLDER = r"C:\Users\gmccarthy\Documents\PC_RTD_GITHUB_resources\PC-MultiMedia\docs"
 
 # Where to save. None = requirements.txt in the same folder as this script
 OUTPUT_FILE = None

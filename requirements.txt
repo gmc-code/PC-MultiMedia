@@ -1,8 +1,11 @@
 docutils
-openpyxl
+lockers
+namepicker
+noisemonitor
+seatingplan
 shibuya
 Sphinx
 sphinx-copybutton
 sphinx-design
 sphinx-togglebutton
-
+studentgroups
