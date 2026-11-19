@@ -3,7 +3,7 @@ MultiMedia Documentation
 =============================
 
 
-These docs provide details on sphinx extensions and how to use them. The extensions are useful for the classroom.
+MultiMedia actiities.
 
 
 
@@ -26,7 +26,7 @@ These docs provide details on sphinx extensions and how to use them. The extensi
 
 .. toctree::
     :maxdepth: 2
-    :caption: Classroom Tools:
+    :caption: Tools:
 
     tools/christmas.rst
 

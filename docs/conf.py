@@ -85,13 +85,13 @@ pygments_style = "sphinx"
 
 # The theme to use for HTML and HTML Help pages.
 # See the documentation for a list of builtin themes.
-# html_theme = "sphinx_rtd_theme"
+html_theme = "sphinx_rtd_theme"
 
-html_theme = "shibuya"
+# html_theme = "shibuya"
 
-html_theme_options = {
-    "page_layout": "compact",
-}
+# html_theme_options = {
+#     "page_layout": "compact",
+# }
 
 # Optional: Theme configurations for Shibuya
 # "accent_color": "blue",
@@ -103,7 +103,7 @@ html_theme_options = {
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 # html_title = None
-html_title = "ClassRoomPlugins"
+html_title = "PC-MultiMedia"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
