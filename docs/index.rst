@@ -2,45 +2,32 @@
 MultiMedia Documentation
 =============================
 
-
 MultiMedia actiities.
-
-
 
 .. toctree::
     :maxdepth: 1
     :caption: Table of Contents:
     :numbered:
 
-    info/Intro.rst
+    intro/Intro.rst
 
 
 .. toctree::
     :maxdepth: 2
-    :caption: User guides:
+    :caption: Year 10 Multimedia course:
 
-
-    info/christmas_info.rst
-
-
-
-.. toctree::
-    :maxdepth: 2
-    :caption: Tools:
-
-    tools/christmas.rst
+    course/course_overview.rst
+    animation/anim_index.rst
+    graphic_design/gd_index.rst
+    web_design/web_index.rst
 
 
 .. toctree::
     :maxdepth: 2
-    :caption: Student tutorials:
-
-    info/christmas_tutorial.rst
+    :caption: Christmas activities:
 
 
-.. toctree::
-    :maxdepth: 2
-    :caption: Directives for developers:
-
-    info/christmas_dev.rst
+    christmas/christmas_tutorial.rst
+    christmas/christmas_info.rst
+    christmas/christmas.rst
 

@@ -28,13 +28,31 @@ from docutils.parsers.rst import roles
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
+
 extensions = [
     "sphinx_copybutton",
     "sphinx.ext.todo",
     "sphinx.ext.autodoc",
     "sphinx_togglebutton",
     "sphinx_design",
-    "christmas.christmas",  # custom directive
+    # custom directives in _ext
+    "activitygroup.activitygroup",
+    "christmas.christmas",
+    "classifying.classifying",
+    "cloze.cloze",
+    "clozegroup.clozegroup",
+    "crossword.crossword",
+    "fillin.fillin",
+    "flashcards.flashcards",
+    "flashquiz.flashquiz",
+    "flowchart.flowchart",
+    "gapfill.gapfill",
+    "mcqgroup.mcqgroup",
+    "multichoice.multichoice",
+    "ordering.ordering",
+    "structuredquestion.structuredquestion",
+    "textselect.textselect",
+    "wordsearch.wordsearch",
 ]
 
 
