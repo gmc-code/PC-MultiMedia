@@ -25,14 +25,150 @@ and you see smooth movement.
 
    Six frames. Shown quickly, the ball seems to roll across the screen.
 
+Here are the same six frames played as an animation, next to a version with
+30 frames. Both take about the same time to cross the screen. Which looks
+smoother?
+
+.. tip::
+
+   **Click a GIF to play it.** Click again to stop it. The GIFs on this page
+   start still, so you can watch each one carefully. In the rolling ball
+   comparisons, clicking any ball plays them all together.
+
+.. grid:: 1
+   :gutter: 0
+   :class-container: clickgif-group
+
+   .. grid-item::
+
+      .. figure:: images/gifs/roll_6_frames.gif
+         :class: clickgif clickgif-ms-1200
+         :width: 420px
+         :alt: Animated GIF of a ball rolling across the screen in 6 jumpy frames
+
+         6 frames: you can see each jump.
+
+   .. grid-item::
+
+      .. figure:: images/gifs/roll_30_frames.gif
+         :class: clickgif clickgif-ms-1200
+         :width: 420px
+         :alt: Animated GIF of the same ball rolling smoothly in 30 frames
+
+         30 frames: smooth movement.
+
 Why does this work?
 ~~~~~~~~~~~~~~~~~~~
 
-Your eyes and brain do not see the world as separate snapshots. When pictures
-change quickly, your brain fills in the gaps between them. This is often called
-**persistence of vision**. Scientists today also talk about the **phi
-phenomenon** and **beta movement**: the brain sees a series of still pictures as
-one moving object.
+For a long time people said animation worked because of **persistence of
+vision**: the idea that each picture "lingers" on the back of your eye until the
+next one arrives. Scientists now know this is **not** the real reason. You may
+still see the term in older books and websites.
+
+The real answer is that **your brain works out movement**. In 1912 the
+psychologist **Max Wertheimer** studied how people see motion when lights flash
+one after another. Scientists now describe two different effects.
+
+Beta movement: seeing an object move
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Two still pictures are shown one after the other, in slightly different places.
+Your brain sees **one object moving** from the first place to the second, even
+though nothing actually crossed the gap. Your brain fills in the path.
+
+Only spots A and B ever light up. Click each one. Which looks most like a
+single dot moving?
+
+.. grid:: 1 3 3 3
+   :gutter: 1
+   :class-container: compact-gifs
+
+   .. grid-item::
+
+      .. figure:: images/gifs/beta_close.gif
+         :class: clickgif clickgif-ms-3000
+         :width: 100%
+         :alt: Two close spots, A and B, light up one after the other every 0.1 seconds
+
+         Close together, switching every 0.1 s
+
+   .. grid-item::
+
+      .. figure:: images/gifs/beta_gap.gif
+         :class: clickgif clickgif-ms-3000
+         :width: 100%
+         :alt: Spot A lights up, the screen goes blank for a moment, then spot B lights up
+
+         A short blank gap between A and B
+
+   .. grid-item::
+
+      .. figure:: images/gifs/beta_one_way.gif
+         :class: clickgif clickgif-ms-3600
+         :width: 100%
+         :alt: Spot A then spot B light up, then a pause, so it seems to jump one way
+
+         One way only: A then B, then a pause
+
+People see this effect differently, and screens can blur the timing a little.
+Most people see movement most strongly when the spots are close together and
+switch quickly, or when there is a clear direction.
+
+* It works with gaps of about **0.1 to 0.2 seconds** between pictures (about 5 to
+  10 frames per second), and keeps working at faster film and video rates.
+* This is what makes **flip books, films, cartoons and GIFs** work. A character
+  seems to walk across the screen, but really you are seeing still frames.
+
+Phi phenomenon: seeing motion without an object
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+When lights flash **much faster**, you stop seeing a single thing travel.
+Instead you see a sweeping, shimmering sense of movement, a bit like a wave or
+a shadow passing along, without a clear object.
+
+.. figure:: images/gifs/phi_lights.gif
+   :class: clickgif clickgif-ms-4000
+   :width: 420px
+   :alt: A row of light bulbs turning on and off very quickly, giving a shimmering chasing effect
+
+   Chasing lights flashing about 0.04 seconds apart. You see movement sweeping
+   along, not separate bulbs.
+
+* It happens with very short gaps of about **0.03 to 0.06 seconds**.
+* You see it in **neon signs, cinema marquee lights and chasing Christmas
+  lights**.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 24 38 38
+
+   * -
+     - **Beta movement**
+     - **Phi phenomenon**
+   * - What you see
+     - A real-looking object moving from A to B
+     - Movement with no clear object, like a sweeping shadow
+   * - Time between flashes
+     - Slower: about 0.1 to 0.2 s
+     - Faster: about 0.03 to 0.06 s
+   * - Examples
+     - Flip books, films, cartoons, GIFs
+     - Neon signs, chasing lights
+
+Your brain builds motion
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Special nerve cells at the back of your brain, in the **visual cortex**, react
+when something changes position in a short time. Some only fire for movement
+in one direction (for example, left to right). So motion is not just something
+your eyes record like a camera. It is something your **brain calculates**, all
+the time, very fast. Animators take advantage of this.
+
+.. admonition:: Try it
+
+   Click the beta movement GIFs above. Tell yourself, "It is only two dots
+   flashing." Can you stop seeing a moving dot? Most people find it very hard,
+   because the brain does the calculation automatically.
 
 Frame rate
 ~~~~~~~~~~
@@ -63,6 +199,58 @@ The **frame rate** is how many frames are shown each second. It is measured in
      - 5 to 15 fps
      - Fewer frames keep the file small
 
+Same movement, four frame rates
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Each ball takes 1.2 seconds to cross the screen. Only the frame rate changes.
+
+.. grid:: 1
+   :gutter: 0
+   :class-container: clickgif-group
+
+   .. grid-item::
+
+      .. figure:: images/gifs/roll_5fps.gif
+         :class: clickgif clickgif-ms-1800
+         :width: 420px
+         :alt: Ball rolling at 5 frames per second, very jerky
+
+         5 fps (6 frames, 13 KB): jerky
+
+   .. grid-item::
+
+      .. figure:: images/gifs/roll_10fps.gif
+         :class: clickgif clickgif-ms-1800
+         :width: 420px
+         :alt: Ball rolling at 10 frames per second, a little jerky
+
+         10 fps (12 frames, 28 KB): OK
+
+   .. grid-item::
+
+      .. figure:: images/gifs/roll_25fps.gif
+         :class: clickgif clickgif-ms-1800
+         :width: 420px
+         :alt: Ball rolling at 25 frames per second, smooth
+
+         25 fps (30 frames, 70 KB): smooth
+
+   .. grid-item::
+
+      .. figure:: images/gifs/roll_50fps.gif
+         :class: clickgif clickgif-ms-1800
+         :width: 420px
+         :alt: Ball rolling at 50 frames per second, very smooth
+
+         50 fps (60 frames, 140 KB): very smooth
+
+.. tip::
+
+   More frames look smoother, but they take longer to make and make the file
+   bigger. Look at the file sizes: doubling the frames from 25 to 50 fps
+   doubles the file size, but most people can barely see the difference.
+   Animators choose a frame rate that is smooth **enough** for the job.
+
 .. admonition:: Animation maths
 
    **Number of frames = frame rate × length in seconds**
@@ -72,6 +260,37 @@ The **frame rate** is how many frames are shown each second. It is measured in
    **Delay per frame = 1 ÷ frame rate**
 
    At 10 fps each frame is shown for 1 ÷ 10 = **0.1 seconds**.
+
+What is a GIF?
+~~~~~~~~~~~~~~
+
+A **GIF** (Graphics Interchange Format) is an image file that can hold several
+frames, so it can play a short animation. It was first released in 1987 and is
+still used everywhere: in messages, on social media and on websites.
+
+.. grid:: 1 2 2 2
+   :gutter: 1
+   :class-container: compact-gifs
+
+   .. grid-item::
+
+      .. figure:: images/gifs/star_loop.gif
+         :class: clickgif clickgif-ms-2880
+         :width: 80%
+         :alt: Animated GIF of a yellow star that grows, glows and shrinks again
+
+   .. grid-item::
+
+      * A GIF stores every **frame** and a **delay** for each one.
+      * It can **loop**: play once, a set number of times, or forever.
+      * It has **no sound**.
+      * It can only use **256 colours**, so it suits cartoons and simple
+        graphics better than photos.
+      * It can have a **see-through** (transparent) background.
+      * Any web browser can play a GIF without extra software.
+
+The star GIF has 6 frames with a delay of 0.12 seconds each, so one loop lasts
+6 × 0.12 = **0.72 seconds**.
 
 ----
 
@@ -83,49 +302,177 @@ important steps.
 
 .. list-table::
    :header-rows: 1
-   :widths: 15 25 60
+   :widths: 16 10 24 50
+   :class: history-table
 
-   * - When
+   * - Picture
+     - When
      - What
      - Why it matters
-   * - 1825
+   * - .. image:: images/history/magic_lantern.svg
+          :width: 110px
+          :alt: A magic lantern projecting a picture onto a screen
+     - 1659
+     - Magic lantern
+     - Painted glass slides were lit by a candle or lamp and projected onto a wall.
+       Some slides had moving parts, so simple pictures could move.
+   * - .. image:: images/history/thaumatrope.svg
+          :width: 110px
+          :alt: A thaumatrope disc on strings showing a bird inside a cage
+     - 1825
      - Thaumatrope
-     - A disc with a picture on each side. Spin it on strings and the two pictures
+     - A disc with a picture on each side. Spin it fast and the two pictures
        join (a bird appears in a cage).
-   * - 1834
-     - Zoetrope
+   * - .. image:: images/history/phenakistiscope.svg
+          :width: 110px
+          :alt: A phenakistiscope disc with slits around the edge, held up to a mirror
+     - 1832
+     - Phenakistiscope (Joseph Plateau)
+     - A spinning disc of drawings with slits around the edge. You look through
+       the slits at a mirror and see the drawings move in a loop.
+   * - .. image:: images/history/zoetrope.svg
+          :width: 110px
+          :alt: A zoetrope drum with slits and a strip of galloping horses inside
+     - 1834
+     - Zoetrope (William Horner)
      - A spinning drum with slits. A strip of drawings inside seems to move when
-       you look through the slits.
-   * - 1868
+       you look through the slits. Several people can watch at once.
+   * - .. image:: images/history/flip_book.svg
+          :width: 110px
+          :alt: A flip book with a stick figure on the top page
+     - 1868
      - Flip book
      - A small book with a drawing on each page. Flick the pages and the drawing
        moves.
-   * - 1908
-     - *Fantasmagorie* by Émile Cohl
+   * - .. image:: images/history/praxinoscope.svg
+          :width: 110px
+          :alt: A praxinoscope drum with a ring of mirrors in the centre
+     - 1877
+     - Praxinoscope (Émile Reynaud)
+     - Like a zoetrope, but with mirrors in the middle instead of slits, so the
+       moving picture is brighter and clearer.
+   * - .. image:: images/history/muybridge.svg
+          :width: 110px
+          :alt: A row of photographs of a galloping horse
+     - 1878
+     - *The Horse in Motion* (Eadweard Muybridge)
+     - A row of cameras took photos of a galloping horse, one after another. The
+       photos proved that all four hooves leave the ground at once, and showed
+       how to break movement into frames.
+   * - .. image:: images/history/kinetoscope.svg
+          :width: 110px
+          :alt: A wooden kinetoscope cabinet with a viewing hole on top
+     - 1893
+     - Kinetoscope (Thomas Edison and William Dickson)
+     - A cabinet that played a short film on a loop. One person at a time
+       watched through a peephole.
+   * - .. image:: images/history/cinematographe.svg
+          :width: 110px
+          :alt: A projector shining a moving picture onto a screen for an audience
+     - 1895
+     - Cinématographe (Lumière brothers)
+     - Projected films onto a screen for a whole audience. This is often seen as
+       the start of cinema.
+   * - .. image:: images/history/fantasmagorie.svg
+          :width: 110px
+          :alt: A white stick figure drawn on a black background
+     - 1908
+     - *Fantasmagorie* (Émile Cohl)
      - One of the first hand-drawn animated films.
-   * - 1926
-     - *The Adventures of Prince Achmed* by Lotte Reiniger
+   * - .. image:: images/history/dinosaur.svg
+          :width: 110px
+          :alt: A friendly cartoon dinosaur
+     - 1914
+     - *Gertie the Dinosaur* (Winsor McCay)
+     - One of the first cartoon characters with a personality. Gertie seemed to
+       listen and react to McCay on stage.
+   * - .. image:: images/history/cutout.svg
+          :width: 110px
+          :alt: Black paper cut-out silhouettes on a coloured background
+     - 1926
+     - *The Adventures of Prince Achmed* (Lotte Reiniger)
      - The oldest surviving animated feature film, made with paper cut-outs.
-   * - 1930s
+   * - .. image:: images/history/sound_film.svg
+          :width: 110px
+          :alt: A strip of film with a soundtrack line along the bottom
+     - 1928
+     - Cartoons with sound
+     - Cartoons such as *Steamboat Willie* were among the first with sound
+       matched to the pictures.
+   * - .. image:: images/history/cel_layers.svg
+          :width: 110px
+          :alt: Clear cel sheets stacked over a painted background
+     - 1930s
      - Cel animation studios
      - Drawings were painted on clear plastic sheets called **cels** and placed
-       over a painted background.
-   * - 1995
+       over a painted background, so the background only had to be painted once.
+   * - .. image:: images/history/gif.svg
+          :width: 110px
+          :alt: A grid of coloured pixels with the letters GIF underneath
+     - 1987
+     - The GIF file
+     - CompuServe created the GIF format. It later became the most common way to
+       share short animations online.
+   * - .. image:: images/history/cgi_3d.svg
+          :width: 110px
+          :alt: A shaded 3D sphere above a wireframe grid
+     - 1995
      - *Toy Story*
      - The first feature film made fully with computer animation.
-   * - Today
+   * - .. image:: images/history/today.svg
+          :width: 110px
+          :alt: A phone playing an animation
+     - Today
      - GIFs, apps and games
      - Anyone with a phone or computer can make animation.
+
+.. tip::
+
+   Click a picture in the table to see it full size.
+
+
+
+See: `<https://www.youtube.com/watch?v=8V_D1g4_ZGo>`_
+
+
+How a thaumatrope works
+~~~~~~~~~~~~~~~~~~~~~~~
+
+A thaumatrope has a bird on one side and an empty cage on the other. Shown
+slowly, you see two separate pictures. Spun fast, your brain joins them and the
+bird appears **inside** the cage.
+
+.. grid:: 1 2 2 2
+   :gutter: 1
+   :class-container: compact-gifs
+
+   .. grid-item::
+
+      .. figure:: images/gifs/thaumatrope_slow.gif
+         :class: clickgif clickgif-ms-4200
+         :width: 60%
+         :alt: A bird and a cage shown one after the other slowly
+
+         Slow: two pictures
+
+   .. grid-item::
+
+      .. figure:: images/gifs/thaumatrope_fast.gif
+         :class: clickgif clickgif-ms-3200
+         :width: 60%
+         :alt: A bird and a cage swapping very fast so the bird seems to be in the cage
+
+         Fast: the bird is in the cage
 
 .. ordering:: text
    :no-indent:
 
-   Thaumatrope (1825)
-   Zoetrope (1834)
-   Flip book (1868)
-   Fantasmagorie, an early hand-drawn film (1908)
-   Prince Achmed, a cut-out feature film (1926)
-   Toy Story, the first fully computer-animated feature (1995)
+   Thaumatrope
+   Zoetrope
+   Flip book
+   Fantasmagorie, an early hand-drawn film
+   Prince Achmed, a cut-out feature film
+   Toy Story, the first fully computer-animated feature
 
 ----
 
@@ -194,6 +541,9 @@ Territory. The ABC made the series with the Djilpin Arts Aboriginal Corporation
 and the community. The stories were first recorded as audio, then young
 Australian animators turned them into films, each in a different style.
 
+| See: `Watch on youtube <https://youtube.com/playlist?list=PLRkgtro5HqVW7C1OcdAHN5XSMKNf9Vbci&si=35BvPA5uCMwKF5Rc>`_
+| See: `Watch on ABC iview <https://iview.abc.net.au/video/WI0502V001S00>`_
+
 *Little J & Big Cuz* (NITV)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -203,12 +553,66 @@ cousins as they explore family, school and Country. Episodes have been made in a
 number of First Nations languages, so children can hear their own language on
 screen.
 
+| See: `Watch on youtube <https://youtube.com/playlist?list=PLooyJE8PGBWA-r8bIeoqAWWfeuiAY40E7&si=atvpiEskccne_tl2>`_
+| See: `Watch on ABC iview <https://iview.abc.net.au/video/ZW1230A001S00>`_
+
+
 .. admonition:: Think about it
 
-   * Why might a community choose animation instead of live action to tell a
-     Dreaming story?
-   * Why does it matter that children see characters like themselves on screen?
-   * Whose permission is needed before a cultural story is shared? Why?
+    #. Why might a community choose animation instead of live action to tell a
+        Dreaming story?
+    #. Why does it matter that children see characters like themselves on screen?
+    #. Whose permission is needed before a cultural story is shared? Why?
+
+    .. dropdown::
+        :icon: codescan
+        :color: primary
+        :class-container: sd-dropdown-container
+
+        .. tab-set::
+
+            .. tab-item:: Q1
+
+                **Why choose animation instead of live action?**
+
+                * Animation can show things that cannot be filmed, such as Ancestral Beings,
+                    spirits, animals that talk, and the land being created.
+                * It can use art styles that connect to the community's own art, such as
+                    painting, dot work or bark painting styles.
+                * It avoids showing real people, which matters if a story should not show
+                    certain faces or if people in the story have passed away.
+                * It appeals to children and young people, so the stories are passed on to the
+                    next generation.
+                * Short animations are easy to share online, in schools and around the world.
+
+            .. tab-item:: Q2
+
+                **Why does it matter that children see characters like themselves?**
+
+                * It shows children that their family, culture, language and Country are
+                    valued and belong on screen.
+                * It builds pride, confidence and a strong sense of identity.
+                * Hearing their own language helps keep languages alive.
+                * Other children learn about and respect cultures different from their own.
+                * When a group never appears on screen, or only appears as stereotypes, it can
+                    make people feel invisible or less important.
+
+
+            .. tab-item:: Q3
+
+                **Whose permission is needed, and why?**
+
+                * The **Traditional Owners**, **Elders** and the **community or family** that
+                    the story belongs to.
+                * Many stories are owned by a particular group. Some may only be told by
+                    certain people, or only to certain people (for example, men's or women's
+                    business).
+                * Permission respects cultural law and makes sure the story is told correctly,
+                    with the right meaning.
+                * It stops culture from being copied or used without credit or benefit to the
+                    community (this is called **cultural appropriation**).
+                * Working with the community means they keep control of their own stories.
+                    *Dust Echoes* was made this way, with the Wugularr community and Djilpin Arts.
 
 .. note::
 
@@ -224,6 +628,14 @@ Activity: make a flip book
 Before you use a computer, make an animation by hand. This shows you how frames
 work.
 
+.. figure:: images/gifs/flipbook_jump.gif
+   :class: clickgif clickgif-ms-1080
+   :width: 200px
+   :alt: Flip book animation of a stick figure that crouches, jumps with arms up and lands
+
+   A 12-page flip book: crouch, jump, land. Notice the **anticipation** (the
+   crouch before the jump).
+
 #. Take a pad of sticky notes (or the corner of an old exercise book).
 #. On the **last** page, draw a simple picture, such as a stick figure or a ball.
 #. On the page above, trace the picture but move it a **tiny** bit.
@@ -234,6 +646,153 @@ work.
 
    Small changes between frames give smooth movement. Big changes make the
    picture jump.
+
+----
+
+Activity: make thaumatropes
+---------------------------
+
+A thaumatrope is one of the oldest animation toys (see the history table).
+You will make several, then design your own.
+
+.. admonition:: You need
+
+   * :download:`thaumatrope_template.pdf <thaumatrope/thaumatrope_template.pdf>`
+     printed on thin card at 100% (actual size)
+   * Coloured pencils or textas
+   * Scissors and a glue stick
+   * A bamboo skewer for each thaumatrope (snip off the sharp tip), **or** a
+     piece of string about 60 cm long
+
+What they should look like
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Click each one to see what you should see when it spins.
+
+.. grid:: 2 3 5 5
+   :gutter: 1
+   :class-container: compact-gifs
+
+   .. grid-item::
+
+      .. figure:: images/gifs/thaum_bird_cage.gif
+         :class: clickgif clickgif-ms-3000
+         :width: 100%
+         :alt: Spinning thaumatrope: a bird appears inside a cage
+
+         Bird in a cage
+
+   .. grid-item::
+
+      .. figure:: images/gifs/thaum_fish_bowl.gif
+         :class: clickgif clickgif-ms-3000
+         :width: 100%
+         :alt: Spinning thaumatrope: a fish appears inside a fishbowl
+
+         Fish in a bowl
+
+   .. grid-item::
+
+      .. figure:: images/gifs/thaum_flower_bee.gif
+         :class: clickgif clickgif-ms-3000
+         :width: 100%
+         :alt: Spinning thaumatrope: a bee appears on a flower
+
+         Bee on a flower
+
+   .. grid-item::
+
+      .. figure:: images/gifs/thaum_face_features.gif
+         :class: clickgif clickgif-ms-3000
+         :width: 100%
+         :alt: Spinning thaumatrope: a blank face gets eyes, a mouth and hair
+
+         Face
+
+   .. grid-item::
+
+      .. figure:: images/gifs/thaum_web_spider.gif
+         :class: clickgif clickgif-ms-3000
+         :width: 100%
+         :alt: Spinning thaumatrope: a spider appears on a web
+
+         Spider on a web
+
+How to make one
+~~~~~~~~~~~~~~~
+
+.. figure:: images/thaumatrope_steps.svg
+   :width: 100%
+   :alt: Four steps: colour and cut out the joined circles; turn over, glue and lay a skewer up the middle; fold and press flat; roll the skewer between your palms to spin
+
+   Making a thaumatrope with a skewer.
+
+#. **Colour** both pictures. Bold, bright colours work best.
+#. **Cut** around the solid black line. Keep the two circles joined at the fold.
+   Snip a tiny notch at each of the two red marks on the front circle.
+#. **Turn it over** so the blank side is facing up. Rub glue all over the blank
+   side.
+#. **Lay the skewer** up the middle of the front circle, from notch to notch, with
+   most of the skewer sticking out the bottom as a handle.
+#. **Fold** along the red dashed line so the back circle covers the skewer. Press
+   flat and line up the edges. Let the glue dry.
+#. **Spin it.** Hold the handle between your flat palms and rub your hands back and
+   forth quickly. Watch the two pictures join into one.
+
+.. admonition:: Using string instead of a skewer
+
+   Lay a 60 cm string up the middle instead of the skewer, so about 20 cm sticks
+   out the **top** and the **bottom**. Fold and glue as before. Hold one end in each
+   hand, twist the disc around 20 times to wind the string up, then pull your hands
+   apart gently. The disc spins one way, then winds back the other way.
+
+.. important::
+
+   The skewer or string must go **up and down**, along the same direction as the
+   fold. Folding flips the back picture over, and spinning flips it back again,
+   so it ends up the right way up. If the stick went side to side, the back
+   picture would appear upside down.
+
+Troubleshooting
+~~~~~~~~~~~~~~~
+
+.. list-table::
+   :header-rows: 1
+   :widths: 40 60
+
+   * - Problem
+     - Fix
+   * - I see two separate pictures flickering
+     - Spin faster. The pictures need to swap more than about 10 times a second.
+   * - The pictures don't line up
+     - The circles were not lined up when you folded. Make sure the cut edges
+       match all the way round.
+   * - The back picture is upside down
+     - The skewer is going side to side. It must go up and down the middle.
+   * - The disc wobbles or slips on the skewer
+     - Use more glue near the skewer, or add a strip of tape over it before
+       folding.
+
+Design your own
+~~~~~~~~~~~~~~~
+
+Use the blank pieces on pages 2 and 3 of the template.
+
+* Draw one part of the picture on the front and the other part on the back.
+  Each half should look **incomplete** on its own.
+* Keep both drawings in the **same position** in their circles, so they line up
+  when they join.
+* Use thick outlines and strong colours. Fine detail is lost when it spins.
+
+**Ideas:** a rocket and its flames, a bare tree and its leaves, a night sky and
+the moon, a jar and the jam inside, a dog and its kennel, a goal and a ball, a
+person and a hat, a pizza base and its toppings.
+
+.. admonition:: Think about it
+
+   * What happens if you spin it slowly? Why?
+   * Which of your designs worked best? What made it work?
+   * How is a thaumatrope like a 2-frame GIF?
 
 ----
 
@@ -252,6 +811,33 @@ Check your understanding
       [ ] The border around a video | That is a different meaning of the word frame.
       [ ] The speed of the animation | That is the frame rate.
       [ ] A type of camera | No. A frame is a single picture.
+
+   .. multichoice::
+
+      Why do we see movement when still frames are shown quickly?
+
+      [ ] The pictures stay on the back of the eye until the next one arrives | This is the old "persistence of vision" idea. Scientists no longer accept it as the explanation.
+      [x] The brain works out movement from the changes between frames | Yes. Nerve cells in the visual cortex detect changes in position.
+      [ ] The screen really moves | The screen does not move.
+      [ ] Our eyes blink in time with the frames | No.
+
+   .. multichoice::
+
+      Dot A flashes, then dot B flashes 0.15 seconds later. You see one dot moving from A to B. This is called...
+
+      [x] beta movement | Yes. You see a single object moving.
+      [ ] the phi phenomenon | Phi is objectless motion at faster speeds.
+      [ ] persistence of vision | That is the old, outdated explanation.
+      [ ] tweening | Tweening is making in-between frames.
+
+   .. multichoice::
+
+      Chasing lights flash very fast and you see a shimmer sweeping along, but no single moving bulb. This is...
+
+      [ ] beta movement | Beta movement is seeing a clear object move.
+      [x] the phi phenomenon | Yes. Motion without a clear object.
+      [ ] a frame rate | Not quite.
+      [ ] squash and stretch | That is a principle of animation.
 
    .. multichoice::
 
@@ -323,6 +909,6 @@ Check your understanding
 
       An animation is made of still pictures called @@frames@@.
       The number shown each second is the @@frame rate@@.
-      Your brain joins the pictures together. This is often called @@persistence@@ of vision.
+      Seeing one object move between two flashing pictures is called @@beta movement@@.
       Films usually run at @@24@@ frames per second.
       In @@stop motion@@ animation, real objects are photographed one frame at a time.

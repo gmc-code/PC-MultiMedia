@@ -53,6 +53,7 @@ Assessment
 .. list-table::
    :header-rows: 1
    :widths: 20 25 55
+   :class: wrap
 
    * - Unit
      - Task

@@ -33,8 +33,9 @@ extensions = [
     "sphinx_copybutton",
     "sphinx.ext.todo",
     "sphinx.ext.autodoc",
-    "sphinx_togglebutton",
-    "sphinx_design",
+    'sphinx_togglebutton',
+    'sphinx_design',
+    "sphinx_new_tab_link",
     # custom directives in _ext
     "activitygroup.activitygroup",
     "christmas.christmas",
@@ -105,19 +106,6 @@ pygments_style = "sphinx"
 # See the documentation for a list of builtin themes.
 html_theme = "sphinx_rtd_theme"
 
-# html_theme = "shibuya"
-
-# html_theme_options = {
-#     "page_layout": "compact",
-# }
-
-# Optional: Theme configurations for Shibuya
-# "accent_color": "blue",
-# "nav_links": [
-#     {"title": "Home", "url": "index"},
-# ],
-
-
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 # html_title = None
@@ -134,12 +122,12 @@ html_static_path = ["_static"]
 
 # Use custom css  html_css_files = ["custom.css"]
 html_css_files = [
-    "css/custom.css",
-    "css/shibuya.css",
+    "css/custom.css"
 ]
 
 # Custom JS
-html_js_files = []
+html_js_files = ["js/external_links.js", "js/click_gifs.js"]
+
 
 # for rtd
 

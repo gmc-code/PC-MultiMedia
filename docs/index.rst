@@ -26,8 +26,7 @@ MultiMedia actiities.
     :maxdepth: 2
     :caption: Christmas activities:
 
-
     christmas/christmas_tutorial.rst
-    christmas/christmas_info.rst
-    christmas/christmas.rst
+    christmas/christmas_demo.rst
+    christmas/christmas_thaumatropes.rst
 

@@ -4,3 +4,4 @@ Sphinx
 sphinx-copybutton
 sphinx-design
 sphinx-togglebutton
+sphinx-new-tab-link

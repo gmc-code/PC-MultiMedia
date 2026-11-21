@@ -17,7 +17,9 @@ Vocabulary flashcards
    Delay | How long one frame is shown in a GIF
    Loop | When an animation goes back to the start and plays again
    GIF | Graphics Interchange Format: an image file that can hold animation and up to 256 colours
-   Persistence of vision | The idea that the brain joins quick still pictures into movement
+   Beta movement | Seeing one object move when still pictures are shown quickly in different places
+   Phi phenomenon | Seeing a sweeping sense of motion, with no clear object, when lights flash very fast
+   Persistence of vision | An old, outdated idea that pictures linger on the eye; the brain actually calculates motion
 
    # Making animation
    Keyframe | An important frame that marks the start or end of a movement

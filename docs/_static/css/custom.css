@@ -308,3 +308,41 @@ table.docutils.plain td {
     font-size: 1.15em !important;
     line-height: 1.5 !important;
 }
+
+
+/* Let table cells wrap instead of scrolling sideways */
+.wy-table-responsive table td,
+.wy-table-responsive table th {
+  white-space: normal;
+}
+
+.wy-table-responsive {
+  overflow: visible;
+}
+
+/*Then add :class: wrap to each table you want to wrap:  */
+.wy-table-responsive table.wrap td,
+.wy-table-responsive table.wrap th {
+  white-space: normal;
+}
+
+
+/* Compact grids of example GIFs (animation pages) */
+.clickgif-group figure,
+.compact-gifs figure {
+  margin: 0 !important;
+}
+
+.clickgif-group figcaption,
+.compact-gifs figcaption,
+.clickgif-group figcaption p,
+.compact-gifs figcaption p {
+  margin: 2px 0 6px !important;
+  font-size: 0.9em;
+  line-height: 1.3;
+}
+
+.clickgif-group.sd-container-fluid,
+.compact-gifs.sd-container-fluid {
+  margin-bottom: 1rem !important;
+}

@@ -1,9 +1,13 @@
-========================
-Christmas scene
-========================
+=========================================
+Christmas scene demo
+=========================================
 
-Click a picture to bring it to life. See :doc:`/christmas/christmas_info` for how to use it, and
-:doc:`/christmas/christmas_tutorial` for the tutorial on making the GIFs in Photoshop.
+The Christmas scene is a picture full of surprises. Each item in it is an animated
+GIF that sits still until a student clicks it, then it plays: the star twinkles,
+the bell rings, the present opens. A counter shows how many have been clicked, and
+there is a message (and snow) when every one has been found.
+
+Click a picture to bring it to life.
 
 .. christmas::
     :title: Christmas scene
@@ -58,3 +62,4 @@ Leave out ``:background:`` and the pictures are set out as cards. This one uses
    penguin.gif
    snowball.gif
    shooting_star.gif | Shooting star
+
