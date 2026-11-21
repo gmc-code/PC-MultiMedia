@@ -6,8 +6,8 @@ What is animation?
 
    * Explain how animation makes still pictures look like they move
    * Describe how animation has changed over time
+   * Make a thaumatrope and a flip book to see how frames create movement
    * Name the main types of animation and give an example of each
-   * Describe how First Nations media artists use animation to tell stories
 
 ----
 
@@ -438,6 +438,8 @@ See: `<https://www.youtube.com/watch?v=8V_D1g4_ZGo>`_
 How a thaumatrope works
 ~~~~~~~~~~~~~~~~~~~~~~~
 
+The word thaumatrope derives from the Ancient Greek words thaûma (θαῦμα, meaning "wonder" or "miracle") and trópos (τρόπος, meaning "a turn"), translating literally to "wonder turner".
+
 A thaumatrope has a bird on one side and an empty cage on the other. Shown
 slowly, you see two separate pictures. Spun fast, your brain joins them and the
 bird appears **inside** the cage.
@@ -473,179 +475,6 @@ bird appears **inside** the cage.
    Fantasmagorie, an early hand-drawn film
    Prince Achmed, a cut-out feature film
    Toy Story, the first fully computer-animated feature
-
-----
-
-Types of animation
-------------------
-
-.. list-table::
-   :header-rows: 1
-   :widths: 25 45 30
-
-   * - Type
-     - How it is made
-     - Example of where you see it
-   * - **Traditional (2D hand-drawn)**
-     - Every frame is drawn by hand, on paper or on a screen.
-     - Classic cartoons, anime
-   * - **Stop motion**
-     - Real objects (clay, toys, paper) are moved a tiny bit and photographed
-       one frame at a time.
-     - Claymation films, LEGO films
-   * - **Cut-out**
-     - Flat shapes are moved around and photographed or moved on a computer.
-     - Some children's TV shows
-   * - **2D digital (vector)**
-     - Shapes are drawn on a computer. The computer can fill in the movement
-       between key poses.
-     - Explainer videos, web cartoons
-   * - **3D computer (CGI)**
-     - Models are built in 3D software, then moved and lit like a film set.
-     - Pixar films, video games
-   * - **Motion graphics**
-     - Text, logos and shapes are animated to give information.
-     - TV news titles, adverts, social media
-   * - **Rotoscoping**
-     - Animators trace over real video, frame by frame.
-     - Music videos, some feature films
-
-.. classifying::
-   :delimiter: =>
-   :instructions: Drag each description into the type of animation it describes.
-
-   Clay models are moved and photographed one frame at a time => Stop motion
-   Every frame is drawn by hand => Traditional 2D
-   Models are built and lit inside 3D software => 3D computer
-   Animated text and logos give information on the news => Motion graphics
-   LEGO figures are moved a tiny bit between photos => Stop motion
-   Drawings on paper are scanned and played in order => Traditional 2D
-   A character is rigged with a skeleton and posed in 3D => 3D computer
-   A company logo spins and flies onto the screen => Motion graphics
-
-----
-
-First Nations storytelling through animation
---------------------------------------------
-
-Aboriginal and Torres Strait Islander Peoples have the oldest continuing
-storytelling cultures in the world. Today, many First Nations artists and
-communities use animation to share stories, languages and culture in new ways.
-
-*Dust Echoes* (ABC)
-~~~~~~~~~~~~~~~~~~~
-
-*Dust Echoes* is a series of short animated films. Each film retells a Dreaming
-story from the Wugularr (Beswick) community in Arnhem Land, in the Northern
-Territory. The ABC made the series with the Djilpin Arts Aboriginal Corporation
-and the community. The stories were first recorded as audio, then young
-Australian animators turned them into films, each in a different style.
-
-| See: `Watch on youtube <https://youtube.com/playlist?list=PLRkgtro5HqVW7C1OcdAHN5XSMKNf9Vbci&si=35BvPA5uCMwKF5Rc>`_
-| See: `Watch on ABC iview <https://iview.abc.net.au/video/WI0502V001S00>`_
-
-*Little J & Big Cuz* (NITV)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-*Little J & Big Cuz* first screened on NITV in 2017. It was Australia's first
-animated children's series with Aboriginal main characters. It follows two
-cousins as they explore family, school and Country. Episodes have been made in a
-number of First Nations languages, so children can hear their own language on
-screen.
-
-| See: `Watch on youtube <https://youtube.com/playlist?list=PLooyJE8PGBWA-r8bIeoqAWWfeuiAY40E7&si=atvpiEskccne_tl2>`_
-| See: `Watch on ABC iview <https://iview.abc.net.au/video/ZW1230A001S00>`_
-
-
-.. admonition:: Think about it
-
-    #. Why might a community choose animation instead of live action to tell a
-        Dreaming story?
-    #. Why does it matter that children see characters like themselves on screen?
-    #. Whose permission is needed before a cultural story is shared? Why?
-
-    .. dropdown::
-        :icon: codescan
-        :color: primary
-        :class-container: sd-dropdown-container
-
-        .. tab-set::
-
-            .. tab-item:: Q1
-
-                **Why choose animation instead of live action?**
-
-                * Animation can show things that cannot be filmed, such as Ancestral Beings,
-                    spirits, animals that talk, and the land being created.
-                * It can use art styles that connect to the community's own art, such as
-                    painting, dot work or bark painting styles.
-                * It avoids showing real people, which matters if a story should not show
-                    certain faces or if people in the story have passed away.
-                * It appeals to children and young people, so the stories are passed on to the
-                    next generation.
-                * Short animations are easy to share online, in schools and around the world.
-
-            .. tab-item:: Q2
-
-                **Why does it matter that children see characters like themselves?**
-
-                * It shows children that their family, culture, language and Country are
-                    valued and belong on screen.
-                * It builds pride, confidence and a strong sense of identity.
-                * Hearing their own language helps keep languages alive.
-                * Other children learn about and respect cultures different from their own.
-                * When a group never appears on screen, or only appears as stereotypes, it can
-                    make people feel invisible or less important.
-
-
-            .. tab-item:: Q3
-
-                **Whose permission is needed, and why?**
-
-                * The **Traditional Owners**, **Elders** and the **community or family** that
-                    the story belongs to.
-                * Many stories are owned by a particular group. Some may only be told by
-                    certain people, or only to certain people (for example, men's or women's
-                    business).
-                * Permission respects cultural law and makes sure the story is told correctly,
-                    with the right meaning.
-                * It stops culture from being copied or used without credit or benefit to the
-                    community (this is called **cultural appropriation**).
-                * Working with the community means they keep control of their own stories.
-                    *Dust Echoes* was made this way, with the Wugularr community and Djilpin Arts.
-
-.. note::
-
-   Many cultural stories belong to a particular community or family. Media
-   artists must work **with** communities and get permission before they retell
-   these stories. This idea is called **cultural protocol**.
-
-----
-
-Activity: make a flip book
---------------------------
-
-Before you use a computer, make an animation by hand. This shows you how frames
-work.
-
-.. figure:: images/gifs/flipbook_jump.gif
-   :class: clickgif clickgif-ms-1080
-   :width: 200px
-   :alt: Flip book animation of a stick figure that crouches, jumps with arms up and lands
-
-   A 12-page flip book: crouch, jump, land. Notice the **anticipation** (the
-   crouch before the jump).
-
-#. Take a pad of sticky notes (or the corner of an old exercise book).
-#. On the **last** page, draw a simple picture, such as a stick figure or a ball.
-#. On the page above, trace the picture but move it a **tiny** bit.
-#. Keep going for at least **12 pages**.
-#. Flick the pages from the back to the front. Your drawing should move.
-
-.. tip::
-
-   Small changes between frames give smooth movement. Big changes make the
-   picture jump.
 
 ----
 
@@ -796,6 +625,166 @@ person and a hat, a pizza base and its toppings.
 
 ----
 
+Activity: make a flip book
+--------------------------
+
+Before you use a computer, make an animation by hand. This shows you how frames
+work.
+
+.. figure:: images/gifs/flipbook_jump.gif
+   :class: clickgif clickgif-ms-1080
+   :width: 200px
+   :alt: Flip book animation of a stick figure that crouches, jumps with arms up and lands
+
+   A 12-page flip book: crouch, jump, land. Notice the **anticipation** (the
+   crouch before the jump).
+
+There are two ways to make a flip book: on a pad of sticky notes, or with the
+printable cards below.
+
+.. admonition:: You need
+
+   * :download:`flipbook_template.pdf <flipbook/flipbook_template.pdf>`: 24 blank
+     cards on 2 pages (print on thin card), **or** a pad of sticky notes
+   * A pencil and eraser, then coloured pencils or a fine black pen
+   * Scissors, and a stapler or bulldog clip
+
+Example to try first
+~~~~~~~~~~~~~~~~~~~~
+
+Print :download:`flipbook_example_ball.pdf <flipbook/flipbook_example_ball.pdf>`,
+cut out the 24 cards and put them together. It is a bouncing ball that gets
+lower with each bounce. Look for **squash and stretch** on the cards where the
+ball lands.
+
+.. figure:: images/gifs/flipbook_ball.gif
+   :class: clickgif clickgif-ms-2600
+   :width: 420px
+   :alt: The example flip book played as an animation: a ball bouncing three times, lower each time, squashing when it lands
+
+   The example flip book: 24 pages, played at 12 pages a second.
+
+Putting it together
+~~~~~~~~~~~~~~~~~~~
+
+.. figure:: images/flipbook_steps.svg
+   :width: 100%
+   :alt: Four steps: draw and cut out the cards; stack them with card 1 at the back; staple or clip through the grey strip; bend the pages with your thumb and let them flick past
+
+   Making a flip book from the printed cards.
+
+#. **Draw** on the right-hand part of each card, away from the grey strip. The
+   flicking edge is on the right, so that is where your drawing is easiest to see.
+#. **Cut** out the cards along the solid lines.
+#. **Stack** them in number order with **card 1 at the back** and the last card at
+   the front. Tap the stack on the desk so the left edges line up.
+#. **Staple** (or bulldog-clip) through the grey strip, about 1 cm from the left
+   edge.
+#. **Flick** from the back to the front: hold the strip in one hand, bend the
+   pages up with the thumb of your other hand, then let them flick past one at a
+   time. If the animation plays backwards, flick the other way.
+
+Making your own
+~~~~~~~~~~~~~~~
+
+#. **Plan first.** Decide what happens from start to finish. Keep it simple: one
+   object and one action, such as a ball bouncing, a flower growing, a rocket
+   taking off or a stick figure jumping.
+#. **Draw the key poses** (pose to pose). Draw the most important positions
+   first, on cards spread through the stack, such as the start (card 1), the
+   middle (card 12) and the end (card 24).
+#. **Fill in the in-betweens.** Lay the next card over the last one and hold them
+   up to a window, so you can see the drawing underneath. Trace it, then move it
+   a **tiny** bit.
+#. **Keep still things still.** Trace the ground line and anything that does not
+   move in exactly the same place on every card. Use the grey ground line on the
+   cards to help.
+#. **Draw in pencil first**, flick to test, then go over it in pen or colour.
+
+.. tip::
+
+   * Small changes between cards give smooth movement. Big changes make the
+     picture jump.
+   * Put cards **closer together** in spacing to make something slow down, and
+     **further apart** to make it speed up (slow in and slow out).
+   * 24 cards is about **2 seconds** of animation if you flick at 12 pages a
+     second.
+
+In-betweening practice
+~~~~~~~~~~~~~~~~~~~~~~
+
+:download:`flipbook_inbetween_practice.pdf <flipbook/flipbook_inbetween_practice.pdf>`
+has the same bouncing ball, but only the **key poses** are drawn: the tops of
+the bounces and the landings (cards 1, 5, 8, 12, 15, 19 and 24). Your job is to
+draw the ball on all the other cards so it moves smoothly between them.
+
+* Near the **top** of a bounce the ball is slow, so the gaps between drawings are
+  small.
+* Near the **ground** the ball is fast, so the gaps are big.
+* Stretch the ball just before and after it lands, and squash it when it hits the
+  ground.
+
+When you have finished, put it together and compare it with the example. Which
+looks smoother? Why?
+
+.. admonition:: Think about it
+
+   * How many cards did your animation use? How long did it last when you flicked
+     it?
+   * Where did your drawing jump instead of moving smoothly? What caused it?
+   * Which principles of animation did you use?
+
+----
+
+Types of animation
+------------------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 25 45 30
+
+   * - Type
+     - How it is made
+     - Example of where you see it
+   * - **Traditional (2D hand-drawn)**
+     - Every frame is drawn by hand, on paper or on a screen.
+     - Classic cartoons, anime
+   * - **Stop motion**
+     - Real objects (clay, toys, paper) are moved a tiny bit and photographed
+       one frame at a time.
+     - Claymation films, LEGO films
+   * - **Cut-out**
+     - Flat shapes are moved around and photographed or moved on a computer.
+     - Some children's TV shows
+   * - **2D digital (vector)**
+     - Shapes are drawn on a computer. The computer can fill in the movement
+       between key poses.
+     - Explainer videos, web cartoons
+   * - **3D computer (CGI)**
+     - Models are built in 3D software, then moved and lit like a film set.
+     - Pixar films, video games
+   * - **Motion graphics**
+     - Text, logos and shapes are animated to give information.
+     - TV news titles, adverts, social media
+   * - **Rotoscoping**
+     - Animators trace over real video, frame by frame.
+     - Music videos, some feature films
+
+.. classifying::
+   :delimiter: =>
+   :instructions: Drag each description into the type of animation it describes.
+
+   Clay models are moved and photographed one frame at a time => Stop motion
+   Every frame is drawn by hand => Traditional 2D
+   Models are built and lit inside 3D software => 3D computer
+   Animated text and logos give information on the news => Motion graphics
+   LEGO figures are moved a tiny bit between photos => Stop motion
+   Drawings on paper are scanned and played in order => Traditional 2D
+   A character is rigged with a skeleton and posed in 3D => 3D computer
+   A company logo spins and flies onto the screen => Motion graphics
+
+----
+
 Check your understanding
 ------------------------
 
@@ -886,21 +875,66 @@ Check your understanding
 
    .. multichoice::
 
-      *Dust Echoes* retells Dreaming stories from which community?
+      How does a thaumatrope work?
 
-      [x] The Wugularr (Beswick) community in Arnhem Land | Yes. The ABC worked with this community and Djilpin Arts.
-      [ ] A community in Tasmania | Not this series.
-      [ ] The Torres Strait Islands | Not this series.
-      [ ] It uses stories made up by the animators | No. The stories came from the community.
+      [ ] It shows 24 pictures one after another | A thaumatrope only has two pictures.
+      [x] It spins two pictures so fast that your brain joins them into one | Yes. A bird and a cage become a bird in a cage.
+      [ ] It projects a picture onto a wall | That is a magic lantern.
+      [ ] It uses a camera to record movement | No camera is used.
 
    .. multichoice::
 
-      What is **cultural protocol**?
+      Why must the skewer go **up and down** the middle of a thaumatrope, the same direction as the fold?
 
-      [ ] A type of animation software | No.
-      [x] Working with a community and getting permission before sharing its stories | Yes.
-      [ ] Making an animation in your own language | Not quite.
-      [ ] Rules about frame rates | No.
+      [x] So the back picture ends up the right way up when it spins | Yes. Folding flips it over and spinning flips it back.
+      [ ] So it spins more slowly | The direction does not change the speed.
+      [ ] So the glue dries faster | No.
+      [ ] It doesn't matter which way it goes | If it goes side to side, the back picture appears upside down.
+
+   .. multichoice::
+
+      In a flip book made from cards, where should card 1 go?
+
+      [x] At the back of the stack, so it is seen first when you flick from back to front | Yes.
+      [ ] In the middle | The cards must be in order.
+      [ ] Anywhere, the order doesn't matter | The order is what makes the movement.
+      [ ] It should be left out | Card 1 is the start of the animation.
+
+   .. multichoice::
+
+      When making a flip book, which drawings should you do **first**?
+
+      [x] The key poses, such as the start, middle and end | Yes. Then you fill in the in-betweens.
+      [ ] The background only | The background stays the same, but plan the movement first.
+      [ ] Every card in order from 1 to 24 | You can, but drawing the key poses first is easier to plan.
+      [ ] The last card only | You need the start and middle too.
+
+   .. multichoice::
+
+      Eadweard Muybridge's *The Horse in Motion* (1878) showed that...
+
+      [x] all four of a galloping horse's hooves leave the ground at once | Yes. A row of cameras captured each moment.
+      [ ] horses cannot run faster than 30 km/h | That was not what it showed.
+      [ ] films could have sound | Sound came in the 1920s.
+      [ ] cartoons could be drawn on computers | Computers came much later.
+
+   .. multichoice::
+
+      Which device has a spinning drum with slits, with a strip of drawings inside?
+
+      [ ] Thaumatrope | A thaumatrope is a disc with two pictures.
+      [x] Zoetrope | Yes. You look through the slits as it spins.
+      [ ] Magic lantern | A magic lantern projects painted slides.
+      [ ] Kinetoscope | A kinetoscope is a cabinet you look into.
+
+   .. multichoice::
+
+      What is the most colours a GIF can use?
+
+      [ ] 16 | GIFs can use more than this.
+      [x] 256 | Yes. That is why GIFs suit cartoons more than photos.
+      [ ] 16.7 million | That is how many colours a JPG can show.
+      [ ] Unlimited | No.
 
 .. clozegroup::
    :show-instant-feedback:

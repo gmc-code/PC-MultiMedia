@@ -346,3 +346,33 @@ table.docutils.plain td {
 .compact-gifs.sd-container-fluid {
   margin-bottom: 1rem !important;
 }
+
+
+/* Dropdown admonitions (:class: dropdown): show a clear arrow on the right
+   instead of the small "Click to show" text */
+button.toggle-button:before {
+  content: none !important;
+}
+
+button.toggle-button {
+  top: 0.2em;
+  width: 1.6em;
+  height: 1.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+}
+
+button.toggle-button .tb-icon {
+  height: 1.3em;
+  width: 1.3em;
+  stroke: #ffffff;
+  stroke-width: 2.5;
+}
+
+.admonition.toggle .admonition-title {
+  padding-right: 3em;
+}

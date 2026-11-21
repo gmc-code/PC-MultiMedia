@@ -162,5 +162,4 @@ picture on the front and the rest on the back.
 
    * What happens if you spin your thaumatrope slowly? Why?
    * Which design worked best? What made it work?
-   * A thaumatrope has only two pictures. How is it like a 2-frame GIF? How is it
-     different from the animated GIFs in the :doc:`christmas_tutorial`?
+   * A thaumatrope has only two pictures. How is it like a 2-frame GIF?

@@ -128,12 +128,12 @@ Each time you start, you get 10 questions picked at random.
 
    .. multichoice::
 
-      *Little J & Big Cuz* first screened in 2017 on which network?
+      Which early device spins a disc with a different picture on each side?
 
-      [ ] Netflix | No.
-      [x] NITV | Correct.
-      [ ] Channel 9 | No.
-      [ ] YouTube | No.
+      [x] Thaumatrope | Correct.
+      [ ] Zoetrope | A zoetrope is a spinning drum.
+      [ ] Flip book | A flip book has many pages.
+      [ ] Praxinoscope | A praxinoscope uses mirrors.
 
    .. multichoice::
 

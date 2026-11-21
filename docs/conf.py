@@ -38,7 +38,7 @@ extensions = [
     "sphinx_new_tab_link",
     # custom directives in _ext
     "activitygroup.activitygroup",
-    "christmas.christmas",
+    "gifscene.gifscene",
     "classifying.classifying",
     "cloze.cloze",
     "clozegroup.clozegroup",
