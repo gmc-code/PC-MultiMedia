@@ -49,6 +49,8 @@
   // move= values. left/right/up/down go off one side and come back in on the other.
   // wave-* bob up and down as they go, hop-* bounce along, jump leaps up and lands again.
   var MOVES = ["left", "right", "up", "down", "wave-left", "wave-right", "hop-left", "hop-right", "jump"];
+  // play modes, for the whole scene (:play: / playMode) or one picture (play=)
+  var PLAY_MODES = ["once", "toggle", "hover"];
   // spread= values for spawned GIFs (see Scene.prototype.spawn).
   var SPREADS = ["burst", "up", "down", "fountain", "trail"];
   // Most copies of spawned GIFs on screen at once in one scene, so the page stays smooth.
@@ -72,14 +74,28 @@
   var EFFECTS = {
     snow: { label: "❄ Snow", title: "Turn the snow on or off" },
     bubbles: { label: "○ Bubbles", title: "Turn the bubbles on or off" },
-    confetti: { label: "✦ Confetti", title: "Turn the confetti on or off" }
+    confetti: { label: "✦ Confetti", title: "Turn the confetti on or off" },
+    wind: { label: "≋ Wind", title: "Turn the wind on or off" }
   };
+  // :intensity: / effectIntensity: how many pieces there are and how fast they go.
+  var INTENSITY = {
+    light: { pieces: 0.45, speed: 0.75 },
+    medium: { pieces: 1, speed: 1 },
+    heavy: { pieces: 2.2, speed: 1.5 }
+  };
+  // choices in the effect button's panel
+  var EFFECT_CHOICES = [
+    { level: "off", label: "Off" },
+    { level: "light", label: "Light ●○○" },
+    { level: "medium", label: "Medium ●●○" },
+    { level: "heavy", label: "Heavy ●●●" }
+  ];
 
   // What each theme uses for anything the page does not set itself.
   var THEMES = {
     none: { title: "Scene", effect: "confetti", icon: "★", message: "You found them all!" },
     christmas: { title: "Christmas", effect: "snow", icon: "🎄", message: "You found them all. Merry Christmas!" },
-    beach: { title: "At the beach", effect: "bubbles", icon: "☀", message: "You found them all. Have a sunny summer holiday!" },
+    beach: { title: "At the beach", effect: "wind", icon: "☀", message: "You found them all. Have a sunny summer holiday!" },
     reef: { title: "Coral reef", effect: "bubbles", icon: "🐠", message: "You found them all. What a reef!" },
     toyroom: { title: "Toy room", effect: "confetti", icon: "🧸", message: "You found them all. Time to tidy up!" }
   };
@@ -137,6 +153,7 @@
       secondsGiven: typeof it.seconds === "number",
       keep: it.keep || "",
       move: MOVES.indexOf(it.move) >= 0 ? it.move : null,
+      mode: PLAY_MODES.indexOf(it.play) >= 0 ? it.play : null,
       spawn: it.spawn ? this.url(it.spawn) : null,
       count: typeof it.count === "number" ? clamp(Math.round(it.count), 1, 20) : 5,
       spread: SPREADS.indexOf(it.spread) >= 0 ? it.spread : "burst",
@@ -167,6 +184,7 @@
     root.classList.toggle("gs-hide-names", cfg.showNames === false);
     root.classList.add("gs-" + cfg.theme);
     this.effect = cfg.effect;
+    this.intensity = INTENSITY[cfg.intensity] ? cfg.intensity : "medium";
     root.textContent = "";
 
     var head = el("div", "gs-head");
@@ -180,8 +198,36 @@
     bar.appendChild(button("▶ Play all", "Play every picture", function () { self.playAll(); }));
     bar.appendChild(button("■ Stop all", "Stop every picture", function () { self.stopAll(); }));
     var fx = EFFECTS[this.effect];
-    this.effectBtn = button(fx.label, fx.title, function () { self.setEffect(!self.effectOn); });
-    bar.appendChild(this.effectBtn);
+    // The effect button opens a small panel: Off, Light, Medium, Heavy. The button shows the
+    // current choice, e.g. "❄ Snow: Medium".
+    var fxWrap = el("span", "gs-fx-wrap");
+    this.effectBtn = button("", fx.title, function () { self.toggleEffectPanel(); });
+    this.effectBtn.setAttribute("aria-haspopup", "true");
+    this.effectBtn.setAttribute("aria-expanded", "false");
+    this.effectPanel = el("div", "gs-fx-panel");
+    this.effectPanel.hidden = true;
+    this.effectPanel.setAttribute("role", "group");
+    this.effectPanel.setAttribute("aria-label", "How much " + this.effect);
+    this.effectChoices = EFFECT_CHOICES.map(function (c) {
+      var b = button(c.label, "", function () { self.chooseEffect(c.level); });
+      b.classList.add("gs-fx-choice");
+      b.dataset.level = c.level;
+      self.effectPanel.appendChild(b);
+      return b;
+    });
+    fxWrap.appendChild(this.effectBtn);
+    fxWrap.appendChild(this.effectPanel);
+    bar.appendChild(fxWrap);
+    // close the panel when something else is clicked, or with Escape
+    document.addEventListener("click", function (e) {
+      if (!self.effectPanel.hidden && !fxWrap.contains(e.target)) self.toggleEffectPanel(false);
+    });
+    fxWrap.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !self.effectPanel.hidden) {
+        self.toggleEffectPanel(false);
+        self.effectBtn.focus();
+      }
+    });
     this.soundBtn = button("🔔 Sound", "Turn the sound on or off", function () {
       self.soundOn = !self.soundOn;
       self.soundBtn.setAttribute("aria-pressed", self.soundOn);
@@ -307,17 +353,18 @@
         .then(function (blob) { item.blob = blob; }).catch(function () {});
     }
 
+    var mode = this.modeOf(item);
     b.addEventListener("click", function () {
       if (self.arranging) { self.select(item); return; }
-      var hovering = self.mode === "hover" && window.matchMedia("(hover: hover)").matches;
-      if (self.mode === "once") self.play(item, true);
+      var hovering = mode === "hover" && window.matchMedia("(hover: hover)").matches;
+      if (mode === "once") self.play(item, true);
       else if (hovering) self.play(item, false);
       else if (item.playing) self.stop(item);
       else self.play(item, false);
       self.markFound(item);
       if (self.soundOn) chime(item.index);
     });
-    if (this.mode === "hover") {
+    if (mode === "hover") {
       b.addEventListener("pointerenter", function (e) {
         if (e.pointerType === "mouse" && !self.arranging) { self.play(item, false); self.markFound(item); }
       });
@@ -328,6 +375,11 @@
     b.addEventListener("pointerdown", function (e) { self.startDrag(item, e); });
     b.addEventListener("keydown", function (e) { self.nudge(item, e); });
     return b;
+  };
+
+  // A picture's own play= mode, or the scene's mode if it has none.
+  Scene.prototype.modeOf = function (item) {
+    return item.mode || this.mode;
   };
 
   Scene.prototype.place = function (item) {
@@ -467,7 +519,7 @@
   Scene.prototype.playAll = function () {
     var self = this;
     this.items.forEach(function (item, i) {
-      setTimeout(function () { self.play(item, self.mode === "once"); self.markFound(item); }, i * 150);
+      setTimeout(function () { self.play(item, self.modeOf(item) === "once"); self.markFound(item); }, i * 150);
     });
   };
 
@@ -604,24 +656,80 @@
 
   // ------------------------------------------------------------------ effects
 
-  // The effect: snow (falls), bubbles (rise) or confetti (falls and spins).
+  // The effect: snow (falls), bubbles (rise), confetti (falls and spins) or wind (gusts of
+  // streaks and grains of sand blowing across from left to right).
+  // Open or close the effect panel (open = true/false, or leave it out to switch).
+  Scene.prototype.toggleEffectPanel = function (open) {
+    if (open === undefined) open = this.effectPanel.hidden;
+    this.effectPanel.hidden = !open;
+    this.effectBtn.setAttribute("aria-expanded", open);
+    if (open) {
+      var current = this.effectOn ? this.intensity : "off";
+      this.effectChoices.forEach(function (b) { if (b.dataset.level === current) b.focus(); });
+    }
+  };
+
+  // A choice in the panel: "off", or a level that turns the effect on at that amount.
+  Scene.prototype.chooseEffect = function (level) {
+    if (level === "off") {
+      this.setEffect(false);
+    } else if (INTENSITY[level]) {
+      this.intensity = level;
+      this.setEffect(true);
+    }
+    this.toggleEffectPanel(false);
+    this.effectBtn.focus();
+  };
+
+  // Show the current choice on the effect button and in the panel.
+  Scene.prototype.showEffectState = function () {
+    var state = this.effectOn ? this.intensity : "off";
+    var word = state.charAt(0).toUpperCase() + state.slice(1);
+    this.effectBtn.textContent = EFFECTS[this.effect].label + ": " + word;
+    this.effectBtn.title = "Choose how much " + this.effect + " (now " + state + ")";
+    this.effectChoices.forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.level === state); });
+  };
+
   Scene.prototype.setEffect = function (on) {
     this.effectOn = on;
     this.effectBtn.setAttribute("aria-pressed", on);
+    this.showEffectState();
     this.effectLayer.textContent = "";
     if (!on) return;
     var effect = this.effect;
+    var level = INTENSITY[this.intensity];
+    var count = Math.round(40 * level.pieces);
+    var i, piece, time;
+    if (effect === "wind") {
+      for (i = 0; i < count; i++) {
+        var sand = i % 3 === 0;
+        piece = el("span", "gs-piece gs-fx-wind " + (sand ? "gs-wind-sand" : "gs-wind-streak"));
+        var len = sand ? 3 + Math.random() * 3 : (60 + Math.random() * 140) * (0.8 + 0.2 * level.speed);
+        time = (sand ? 2.5 + Math.random() * 3 : 1.4 + Math.random() * 1.8) / level.speed;
+        piece.style.top = 4 + Math.random() * 92 + "%";
+        piece.style.width = len + "px";
+        piece.style.height = (sand ? len : 2 + Math.random() * 2) + "px";
+        piece.style.animationDuration = time + "s";
+        piece.style.animationDelay = -Math.random() * time + "s";
+        piece.style.setProperty("--gs-lift", (Math.random() * 40 - 20) * level.speed + "px");
+        piece.style.setProperty("--gs-o", (sand ? 0.7 : 0.55) + Math.random() * 0.3);
+        this.effectLayer.appendChild(piece);
+      }
+      return;
+    }
     var colours = ["#f43f5e", "#f59e0b", "#22c55e", "#0ea5e9", "#a855f7", "#facc15"];
-    for (var i = 0; i < 40; i++) {
-      var piece = el("span", "gs-piece gs-fx-" + effect);
+    for (i = 0; i < count; i++) {
+      piece = el("span", "gs-piece gs-fx-" + effect);
       var size = effect === "bubbles" ? 8 + Math.random() * 18 : 4 + Math.random() * 8;
+      if (effect === "snow" && this.intensity === "heavy") size *= 1.2;
+      time = (6 + Math.random() * 8) / level.speed;
       piece.style.left = Math.random() * 100 + "%";
       piece.style.width = size + "px";
       piece.style.height = (effect === "confetti" ? size * 0.5 : size) + "px";
       piece.style.opacity = 0.5 + Math.random() * 0.5;
-      piece.style.animationDuration = 6 + Math.random() * 8 + "s";
-      piece.style.animationDelay = -Math.random() * 14 + "s";
-      piece.style.setProperty("--gs-drift", (Math.random() * 60 - 30) + "px");
+      piece.style.animationDuration = time + "s";
+      piece.style.animationDelay = -Math.random() * time + "s";
+      piece.style.setProperty("--gs-drift", (Math.random() * 60 - 30) * level.speed + "px");
       if (effect === "confetti") piece.style.background = colours[i % colours.length];
       this.effectLayer.appendChild(piece);
     }
@@ -779,7 +887,7 @@
   // settings the Arrange button must keep when it writes a kit line out again
   function kitKeep(g) {
     var out = [];
-    ["seconds", "move", "spawn", "count", "spread", "spawnWidth", "every", "spawnFor", "life", "distance", "still"].forEach(function (k) {
+    ["seconds", "move", "play", "spawn", "count", "spread", "spawnWidth", "every", "spawnFor", "life", "distance", "still"].forEach(function (k) {
       if (g[k] !== undefined) out.push(k + ": " + (typeof g[k] === "string" ? JSON.stringify(g[k]) : g[k]));
     });
     return out.join(", ");
@@ -804,6 +912,7 @@
       play: typeof playMode !== "undefined" ? playMode : "once",
       startEffect: typeof startEffect !== "undefined" ? startEffect : false,
       effect: typeof sceneEffect !== "undefined" ? sceneEffect : undefined,
+      intensity: typeof effectIntensity !== "undefined" ? effectIntensity : "medium",
       theme: typeof sceneTheme !== "undefined" ? sceneTheme : "",
       icon: typeof finishIcon !== "undefined" ? finishIcon : undefined,
       sound: typeof playSound !== "undefined" ? playSound : true,
@@ -812,7 +921,7 @@
       items: myGifs.filter(function (g) { return g && g.file; }).map(function (g) {
         return {
           file: g.file, src: g.file, name: g.name, x: g.x, y: g.y, width: g.width, seconds: g.seconds,
-          still: g.still, move: g.move, spawn: g.spawn, count: g.count, spread: g.spread, spawnWidth: g.spawnWidth,
+          still: g.still, move: g.move, play: g.play, spawn: g.spawn, count: g.count, spread: g.spread, spawnWidth: g.spawnWidth,
           every: g.every, spawnFor: g.spawnFor, life: g.life, distance: g.distance,
           keep: kitKeep(g)
         };

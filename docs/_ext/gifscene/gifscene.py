@@ -41,11 +41,14 @@ Each content line is ``file | name | settings``. Only the file is needed.
 With ``:background:`` the pictures are placed over the background (a scene). Without it they are
 set out in a grid of cards (``:columns:``). ``:play:`` is ``once`` (play once per click),
 ``toggle`` (click to start, click to stop) or ``hover`` (play while the mouse is over it).
+``play=`` on a picture's line gives that picture its own mode, overriding ``:play:``.
 
 ``:theme:`` (``christmas``, ``beach``, ``reef`` or ``toyroom``; neutral if left out) sets the colours and the defaults
-for ``:title:``, ``:effect:`` (``snow``, ``bubbles`` or ``confetti``), ``:icon:`` and
+for ``:title:``, ``:effect:`` (``snow``, ``bubbles``, ``confetti`` or ``wind``), ``:icon:`` and
 ``:message:``. Any of those given on the directive win over the theme. ``:start-effect:`` turns
 the effect on when the page opens; it always comes on when every picture has been found.
+``:intensity:`` is ``light``, ``medium`` (default) or ``heavy``: fewer, slower pieces or more,
+faster ones.
 
 The Arrange button lets pictures be dragged and resized on the page, then gives the lines to
 paste back into the directive.
@@ -74,7 +77,7 @@ HERE = Path(__file__).parent
 ASSETS = ("gifscene.css", "gifscene.js")
 MEDIA_DIR = "_static/gifscene-media"
 PLAY_MODES = ("once", "toggle", "hover")
-ITEM_KEYS = ("x", "y", "width", "seconds", "still", "move", "spawn", "count", "spread", "spawnwidth",
+ITEM_KEYS = ("x", "y", "width", "seconds", "still", "move", "play", "spawn", "count", "spread", "spawnwidth",
              "every", "spawnfor", "life", "distance")
 # settings that only mean something with spawn=, and their names in the JSON for gifscene.js
 SPAWN_KEYS = (("count", "count"), ("spread", "spread"), ("spawnwidth", "spawnWidth"), ("every", "every"),
@@ -84,7 +87,8 @@ NUMBER_RANGES = {"seconds": (0.2, 60), "every": (0.05, 10), "spawnfor": (0.1, 60
                  "distance": (1, 150)}
 SPREADS = ("burst", "up", "down", "fountain", "trail")
 MOVES = ("left", "right", "up", "down", "wave-left", "wave-right", "hop-left", "hop-right", "jump")
-EFFECTS = ("snow", "bubbles", "confetti")
+EFFECTS = ("snow", "bubbles", "confetti", "wind")
+INTENSITIES = ("light", "medium", "heavy")
 THEMES = ("none", "christmas", "beach", "reef", "toyroom")
 DEFAULT_SECONDS = 3.0
 DEFAULT_MOVE_SECONDS = 6.0
@@ -185,6 +189,7 @@ class GifSceneDirective(SphinxDirective):
         "message": directives.unchanged,
         "start-effect": directives.flag,
         "effect": _choice(*EFFECTS),
+        "intensity": _choice(*INTENSITIES),
         "icon": directives.unchanged,
         "theme": _choice(*THEMES),
         "sound": directives.flag,
@@ -237,6 +242,12 @@ class GifSceneDirective(SphinxDirective):
                     found[key] = int(_number(value, 1, 20))
                 except ValueError:
                     self.warn("%s: count=%r should be a whole number from 1 to 20." % (filename, value))
+                continue
+            if key == "play":
+                if value.lower() in PLAY_MODES:
+                    found[key] = value.lower()
+                else:
+                    self.warn("%s: play=%r should be one of: %s." % (filename, value, ", ".join(PLAY_MODES)))
                 continue
             if key == "move":
                 if value.lower() in MOVES:
@@ -305,12 +316,14 @@ class GifSceneDirective(SphinxDirective):
             def shown(v):
                 return "%s-%s" % tuple(v) if isinstance(v, list) else v
             keep = ["%s=%s" % (k, shown(settings[k]))
-                    for k in ("seconds", "still", "move", "spawn") + tuple(k for k, _ in SPAWN_KEYS)
+                    for k in ("seconds", "still", "move", "play", "spawn") + tuple(k for k, _ in SPAWN_KEYS)
                     if k in settings]
             if keep:
                 item["keep"] = " ".join(keep)
             item.setdefault("seconds", DEFAULT_SECONDS)
             item["loops"] = loops
+            if "play" in settings:
+                item["play"] = settings["play"]
             if "still" in settings:
                 still, _ = self._media(settings["still"], files, "still picture")
                 if still:
@@ -352,6 +365,7 @@ class GifSceneDirective(SphinxDirective):
             "play": self.options.get("play", "once"),
             "columns": columns,
             "startEffect": "start-effect" in self.options,
+            "intensity": self.options.get("intensity", "medium"),
             "sound": "sound" in self.options,
             "showNames": "hide-names" not in self.options,
             "items": items,
@@ -483,4 +497,4 @@ def setup(app):
     app.connect("env-merge-info", merge_docs)
     app.connect("env-get-outdated", outdated_if_assets_changed)
     app.connect("build-finished", copy_static_files)
-    return {"version": "2.2", "parallel_read_safe": True, "parallel_write_safe": True}
+    return {"version": "2.4", "parallel_read_safe": True, "parallel_write_safe": True}

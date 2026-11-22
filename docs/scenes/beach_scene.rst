@@ -24,17 +24,16 @@ Click a picture to bring it to life.
     cloud.gif | Cloud | x=26 y=17.3 width=15 seconds=24 move=right
     seagull.gif | Seagull | x=62 y=33.9 width=8 seconds=10 move=wave-left
     sailboat.gif | Sailboat | x=42.7 y=48.2 width=7 seconds=20 move=wave-right
-    dolphin.gif | Dolphin | x=80 y=57 width=10 seconds=1.5 move=jump spawn=drop.gif count=7 spread=fountain
+    dolphin.gif | Dolphin | x=80 y=57 width=10 seconds=1.5 move=jump spawn=drop.gif count=7 spread=fountain spawnwidth=1-1.5 spawnfor=1.5 life=2.2 distance=25
     surfer.gif | Surfer | x=28 y=60 width=10 seconds=9 move=wave-right
-    flag.gif | Red and yellow flag | x=6 y=69 width=6
-    flag.gif | Other flag | x=46 y=69 width=6
-    umbrella.gif | Beach umbrella | x=74 y=74 width=15
-    sandcastle.gif | Sandcastle | x=89.4 y=66.7 width=10
+    flag.gif | Red and yellow flag | x=6 y=69 width=6 play=toggle
+    flag.gif | Other flag | x=46 y=69 width=6 play=toggle
+    umbrella.gif | Beach umbrella | x=74 y=74 width=15 play=toggle
+    sandcastle.gif | Sandcastle | x=89.4 y=66.7 width=10 play=toggle
     esky.gif | Esky | x=61.8 y=68.7 width=14.5 spawn=sparkle.gif count=6 spread=burst
-    kangaroo.gif | Kangaroo | x=21 y=80 width=11 seconds=7 move=hop-right
-    beach_ball.gif | Beach ball | x=37 y=90 width=5 seconds=7 move=hop-left
-    crab.gif | Crab | x=66 y=93 width=6 seconds=10 move=left
-
+    kangaroo.gif | Kangaroo | x=21 y=80 width=11 seconds=4 move=hop-right
+    beach_ball.gif | Beach ball | x=36.7 y=85.7 width=5 seconds=7 move=hop-left
+    crab.gif | Crab | x=53.8 y=93 width=12.5 seconds=10 move=left
 
 
 Seven of the pictures have ``move=`` on their lines, so they travel when they are clicked.
@@ -644,10 +643,14 @@ Extra challenges
 ----------------
 
 #. **New title and message.** Change ``sceneTitle`` and ``finishMessage`` in ``my_scene.js``.
-#. **Weather.** Change ``sceneEffect`` from ``"bubbles"`` to ``"confetti"`` or ``"snow"``.
-   Which one suits a beach best?
+#. **Weather.** The beach is windy, so ``sceneEffect`` is ``"wind"``. Change it to ``"bubbles"``,
+   ``"confetti"`` or ``"snow"``. Which one suits a beach best? Change ``effectIntensity`` to
+   ``"light"`` for a breeze or ``"heavy"`` for a gale. (Try them first: click the **≋ Wind**
+   button above the scene and choose Light, Medium or Heavy.)
 #. **Play modes.** Change ``playMode`` from ``"once"`` to ``"toggle"``. What is different?
    Try ``"hover"`` too.
+   One picture can have its own mode too: add ``play: "toggle"`` (or ``"once"``, ``"hover"``)
+   to its line.
 #. **Under the sea.** Make a picture 1600 pixels wide and 900 pixels high of the sea floor.
    Save it as a PNG in the ``images`` folder, change ``sceneBackground`` to its name and fill
    it with fish, crabs and bubbles that use ``"up"`` and ``"wave-left"``.

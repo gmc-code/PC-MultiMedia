@@ -29,11 +29,11 @@ Click a picture to bring it to life.
     present.gif | Present | x=37 y=82 width=10
     candle.gif | Candle | x=55.7 y=67.5 width=8
     gingerbread.gif | Gingerbread | x=89 y=80 width=10
-    santa_sleigh.gif | Santa's sleigh | x=40 y=33 width=30 seconds=8 move=right spawn=gift.gif count=6 spread=trail spawnwidth=1-4 life=4 spawnfor=6
+    santa_sleigh.gif | Santa's sleigh | x=10 y=33 width=30 seconds=8 move=right spawn=gift.gif count=8 spread=down spawnwidth=1-3 life=10 spawnfor=6
     shooting_star.gif | Shooting star | x=71.5 y=5.1 width=13 seconds=3 move=left
-    elf_green.gif | Green elf | x=47 y=91 width=8 seconds=6 move=right
+    elf_green.gif | Green elf | x=47 y=91 width=8 seconds=6 move=wave-right
     elf_red.gif | Red elf | x=40 y=93 width=9.5 seconds=6.5 move=right
-    penguin.gif | Penguin | x=75.6 y=95.5 width=7.5 seconds=6 move=left
+    penguin.gif | Penguin | x=75.6 y=95.5 width=7.5 seconds=4 move=left
     snowball.gif | Snowball | x=9.4 y=89.6 width=5 seconds=7 move=right
 
 The sleigh, the shooting star, the elves, the penguin and the snowball have ``move=`` on
@@ -817,8 +817,12 @@ Extra challenges
    has been clicked.
 #. **Play modes.** Change ``playMode`` from ``"once"`` to ``"toggle"``. What is
    different? Try ``"hover"`` too.
-#. **Weather.** Change ``sceneEffect`` from ``"snow"`` to ``"confetti"`` or
-   ``"bubbles"``. To start with it off, change ``startEffect`` to ``false``.
+   One picture can have its own mode too: add ``play: "toggle"`` (or ``"once"``, ``"hover"``)
+   to its line.
+#. **Weather.** Change ``sceneEffect`` from ``"snow"`` to ``"confetti"``,
+   ``"bubbles"`` or ``"wind"``. To start with it off, change ``startEffect`` to ``false``.
+   Change ``effectIntensity`` to ``"light"`` or ``"heavy"`` for a gentle flurry or a blizzard.
+   (Try them first: click the **❄ Snow** button above the scene and choose Light, Medium or Heavy.)
 #. **New ways to move.** Try ``move: "hop-right"``, ``"wave-left"`` or ``"jump"``
    on one of your travelling pictures. Which suits it best?
 #. **Your own background.** Make a picture 1600 pixels wide and 900 pixels high

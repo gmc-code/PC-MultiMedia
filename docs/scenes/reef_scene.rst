@@ -26,7 +26,7 @@ Click a picture to bring it to life.
     octopus.gif | Octopus | x=88 y=72 width=11
     eel.gif | Eel | x=25 y=80 width=10
     anemone.gif | Anemone | x=12 y=89 width=10
-    treasure_chest.gif | Treasure chest | x=62 y=86 width=11 spawn=coin.gif count=8 spread=fountain
+    treasure_chest.gif | Treasure chest | x=62 y=86 width=11 spawn=coin.gif count=8 spread=fountain life=10
     hermit_crab.gif | Hermit crab | x=42 y=92 width=7 seconds=14 move=right
     starfish.gif | Starfish | x=78 y=93 width=6
 
@@ -631,10 +631,14 @@ Extra challenges
 ----------------
 
 #. **New title and message.** Change ``sceneTitle`` and ``finishMessage`` in ``my_scene.js``.
-#. **Effects.** Change ``sceneEffect`` to ``"bubbles"``, ``"confetti"`` or ``"snow"``.
+#. **Effects.** Change ``sceneEffect`` to ``"bubbles"``, ``"confetti"``, ``"snow"`` or ``"wind"``.
    Which one suits your scene best? Set ``startEffect`` to ``true`` to have it on from the start.
+   Change ``effectIntensity`` to ``"light"``, ``"medium"`` or ``"heavy"`` to have less or more of it.
+   (Try them first: click the **○ Bubbles** button above the scene and choose Light, Medium or Heavy.)
 #. **Play modes.** Change ``playMode`` from ``"once"`` to ``"toggle"``. What is different?
    Try ``"hover"`` too.
+   One picture can have its own mode too: add ``play: "toggle"`` (or ``"once"``, ``"hover"``)
+   to its line.
 #. **Night dive.** Make a darker version of the background for a night dive and add glowing jellyfish. Make it 1600 pixels wide and 900 pixels high,
    save it as a PNG in the ``images`` folder and change ``sceneBackground`` to its name.
 #. **Tell a story.** Make a scene where the pictures, played one after another, tell a short

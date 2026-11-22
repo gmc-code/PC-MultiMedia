@@ -635,10 +635,14 @@ Extra challenges
 ----------------
 
 #. **New title and message.** Change ``sceneTitle`` and ``finishMessage`` in ``my_scene.js``.
-#. **Effects.** Change ``sceneEffect`` to ``"bubbles"``, ``"confetti"`` or ``"snow"``.
+#. **Effects.** Change ``sceneEffect`` to ``"bubbles"``, ``"confetti"``, ``"snow"`` or ``"wind"``.
    Which one suits your scene best? Set ``startEffect`` to ``true`` to have it on from the start.
+   Change ``effectIntensity`` to ``"light"``, ``"medium"`` or ``"heavy"`` to have less or more of it.
+   (Try them first: click the **✦ Confetti** button above the scene and choose Light, Medium or Heavy.)
 #. **Play modes.** Change ``playMode`` from ``"once"`` to ``"toggle"``. What is different?
    Try ``"hover"`` too.
+   One picture can have its own mode too: add ``play: "toggle"`` (or ``"once"``, ``"hover"``)
+   to its line.
 #. **Bedtime.** Make a night-time version of the room with the curtains closed and a night light glowing. Make it 1600 pixels wide and 900 pixels high,
    save it as a PNG in the ``images`` folder and change ``sceneBackground`` to its name.
 #. **Tell a story.** Make a scene where the pictures, played one after another, tell a short
