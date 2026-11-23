@@ -15,6 +15,13 @@ a present, and a snow globe. Then you will design your own.
 
    * :download:`christmas_thaumatrope_template.pdf <thaumatrope/christmas_thaumatrope_template.pdf>`
      printed on thin card at 100% (actual size)
+   * Optional extra templates, also printed on thin card at 100%:
+
+     * :download:`christmas_thaumatrope_ideas_template.pdf <thaumatrope/christmas_thaumatrope_ideas_template.pdf>`
+       (8 Christmas ideas drawn as outlines, ready to colour)
+     * :download:`christmas_thaumatrope_blank_template.pdf <thaumatrope/christmas_thaumatrope_blank_template.pdf>`
+       (6 blank grid pieces for your own designs)
+
    * Coloured pencils or textas
    * Scissors and a glue stick
    * A bamboo skewer for each thaumatrope (snip off the sharp tip), **or** a
@@ -127,7 +134,8 @@ Troubleshooting
      - Spin faster. The pictures need to swap more than about 10 times a second.
    * - The pictures don't line up
      - The circles were not lined up when you folded. Make sure the cut edges match
-       all the way round.
+       all the way round. On your own designs, check both parts use the same grid
+       squares.
    * - The back picture is upside down
      - The skewer is going side to side. It must go up and down the middle.
    * - The disc slips on the skewer
@@ -138,13 +146,27 @@ Troubleshooting
 Design your own
 ---------------
 
-Pages 2 and 3 of the template have blank pieces. Draw one part of a Christmas
-picture on the front and the rest on the back.
+Pages 2 and 3 of the template have blank pieces with faint grey guide lines.
+For more blank pieces, print
+:download:`christmas_thaumatrope_blank_template.pdf <thaumatrope/christmas_thaumatrope_blank_template.pdf>`
+(6 pieces on 2 pages). Draw one part of a Christmas picture on the front and the
+rest on the back.
+
+.. figure:: thaumatrope/xmas_thaumatrope_placement.svg
+   :width: 100%
+   :alt: The front circle has a candle on a plate with holly in squares C3 to F7, with squares D1 to E2 left empty. The back circle has the flame in squares D1 to E2, with squares C3 to F7 left empty. When it spins, the flame appears on top of the candle.
+
+   Plan with the grid: each part goes in the squares the other part leaves empty.
 
 .. tip::
 
    * Each half should look **unfinished** on its own.
-   * Keep both drawings in the **same position** in their circles so they line up.
+   * Both circles have the **same grid**: columns **A to H** and rows **1 to 8**.
+     Draw the matching parts in the **same squares** on each circle.
+   * Draw the back picture **the right way round**, just as you want to see it.
+     Do not mirror or flip it.
+   * Keep your drawing **inside the dotted blue ring** so nothing gets cut off.
+   * Sketch lightly in pencil first. Colouring in will hide the grey guides.
    * Use thick outlines and strong colours. Tiny details disappear when it spins.
 
 **Christmas ideas:**
@@ -155,8 +177,92 @@ picture on the front and the rest on the back.
 * A candle and its flame
 * A Christmas pudding and the holly on top
 * A window and falling snow outside
-* A penguin and its Santa hat
+* Santa and his bag of toys
 * An empty plate and the cookies left out for Santa
+
+All eight ideas are drawn for you as light grey outlines in
+:download:`christmas_thaumatrope_ideas_template.pdf <thaumatrope/christmas_thaumatrope_ideas_template.pdf>`
+(3 pages, with a blank piece on the last page). Colour them in, cut them out and
+spin them. Look at how each picture is split between the front and the back, then
+try one of your own.
+
+Click each one to see it spin.
+
+.. grid:: 2 3 4 4
+   :gutter: 1
+   :class-container: compact-gifs
+
+   .. grid-item::
+
+      .. figure:: thaumatrope/xmas_thaum_chimney.gif
+         :class: clickgif clickgif-ms-3000
+         :width: 100%
+         :alt: Spinning thaumatrope: Santa's boots appear sticking out of a chimney on a snowy roof
+
+         Santa down the chimney
+
+   .. grid-item::
+
+      .. figure:: thaumatrope/xmas_thaum_stocking.gif
+         :class: clickgif clickgif-ms-3000
+         :width: 100%
+         :alt: Spinning thaumatrope: a teddy, candy cane and present appear in a stocking
+
+         Stocking full of toys
+
+   .. grid-item::
+
+      .. figure:: thaumatrope/xmas_thaum_gingerbread.gif
+         :class: clickgif clickgif-ms-3000
+         :width: 100%
+         :alt: Spinning thaumatrope: a plain gingerbread person gets icing, a bow tie and buttons
+
+         Gingerbread person
+
+   .. grid-item::
+
+      .. figure:: thaumatrope/xmas_thaum_candle.gif
+         :class: clickgif clickgif-ms-3000
+         :width: 100%
+         :alt: Spinning thaumatrope: a flame appears on top of a red candle
+
+         Candle and flame
+
+   .. grid-item::
+
+      .. figure:: thaumatrope/xmas_thaum_pudding.gif
+         :class: clickgif clickgif-ms-3000
+         :width: 100%
+         :alt: Spinning thaumatrope: custard and holly appear on top of a Christmas pudding
+
+         Christmas pudding
+
+   .. grid-item::
+
+      .. figure:: thaumatrope/xmas_thaum_window.gif
+         :class: clickgif clickgif-ms-3000
+         :width: 100%
+         :alt: Spinning thaumatrope: snow falls outside a window at night
+
+         Snowy window
+
+   .. grid-item::
+
+      .. figure:: thaumatrope/xmas_thaum_santa_sack.gif
+         :class: clickgif clickgif-ms-3000
+         :width: 100%
+         :alt: Spinning thaumatrope: Santa holds up a sack full of toys
+
+         Santa and his bag of toys
+
+   .. grid-item::
+
+      .. figure:: thaumatrope/xmas_thaum_cookies.gif
+         :class: clickgif clickgif-ms-3000
+         :width: 100%
+         :alt: Spinning thaumatrope: cookies appear on an empty plate and milk fills the glass
+
+         Cookies for Santa
 
 .. admonition:: Think about it
 

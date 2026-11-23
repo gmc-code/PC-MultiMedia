@@ -595,7 +595,8 @@ Troubleshooting
      - Spin faster. The pictures need to swap more than about 10 times a second.
    * - The pictures don't line up
      - The circles were not lined up when you folded. Make sure the cut edges
-       match all the way round.
+       match all the way round. On your own designs, check that both parts use
+       the same grid squares.
    * - The back picture is upside down
      - The skewer is going side to side. It must go up and down the middle.
    * - The disc wobbles or slips on the skewer
@@ -605,12 +606,28 @@ Troubleshooting
 Design your own
 ~~~~~~~~~~~~~~~
 
-Use the blank pieces on pages 2 and 3 of the template.
+Use the blank pieces on pages 2 and 3 of the template. They have faint grey
+guide lines to help you place your drawings.
+
+.. figure:: images/thaumatrope_placement.svg
+   :width: 100%
+   :alt: The front circle has a rocket drawn in squares C1 to F6, with squares D7 to E8 left empty. The back circle has flames drawn in squares D7 to E8, with squares D1 to E6 left empty. When it spins, the flames appear under the rocket.
+
+   Plan with the grid: each part goes in the squares the other part leaves empty.
 
 * Draw one part of the picture on the front and the other part on the back.
   Each half should look **incomplete** on its own.
-* Keep both drawings in the **same position** in their circles, so they line up
-  when they join.
+* Both circles have the **same grid**. The columns are lettered **A to H**
+  and the rows are numbered **1 to 8**. Whatever squares a part uses on one
+  circle, the matching part must use the **same squares** on the other circle.
+* Draw the back picture **the right way round**, just as you want to see it.
+  Do not mirror or flip it. Folding and spinning take care of that.
+* The vertical centre line on the front is where the skewer goes. Pictures
+  centred on this line spin most steadily.
+* Keep your drawing **inside the dotted blue ring**, so nothing gets cut off
+  when you cut out the circles.
+* Sketch lightly in pencil first. When you colour in, the grey guides will
+  hardly show.
 * Use thick outlines and strong colours. Fine detail is lost when it spins.
 
 **Ideas:** a rocket and its flames, a bare tree and its leaves, a night sky and
