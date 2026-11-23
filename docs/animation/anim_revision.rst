@@ -29,6 +29,23 @@ Vocabulary flashcards
    Timeline | The Photoshop panel used to build animation frames
    Opacity | How see-through a layer is, from 0% (invisible) to 100% (solid)
 
+   # Telling a story
+   Opening | The start of a story, which sets the scene and introduces the character
+   Development | The middle of a story, where something happens and builds up
+   Climax | The biggest, most exciting moment of the story
+   Closure | The end of a story, where the problem is solved or the message is shown
+   Cause and effect | One event makes the next one happen
+   Symbolic code | Something in the picture that stands for an idea or feeling, such as colour or a prop
+   Written code | Words in the picture, such as a slogan or call to action
+
+   # Shots and angles
+   Extreme long shot (ELS) | Shows the whole setting; often used to open a story
+   Close-up (CU) | A face or one object fills the frame; shows feelings
+   Low angle | Camera looks up; character seems big or powerful
+   High angle | Camera looks down; character seems small or weak
+   Pan | The view slides sideways across a scene
+   Fade | The picture slowly appears from or disappears to black or white
+
    # Exporting
    Dither | Mixing dots of colour to fake colours that are not in the palette
    Transparency | Areas of an image that are see-through
@@ -128,6 +145,42 @@ Each time you start, you get 10 questions picked at random.
 
    .. multichoice::
 
+      Which part of a story sets the scene and shows who it is about?
+
+      [x] Opening | Correct.
+      [ ] Climax | The climax is the biggest moment.
+      [ ] Closure | The closure is the end.
+      [ ] Development | The development is where things build up.
+
+   .. multichoice::
+
+      Which shot would best show how a character feels?
+
+      [ ] Extreme long shot | The character is too small to see their face.
+      [ ] Long shot | Shows the whole body, but the face is small.
+      [x] Close-up | Correct.
+      [ ] Bird's-eye view | This is an angle from above.
+
+   .. multichoice::
+
+      A camera looks up at a character. How does the character seem?
+
+      [x] Big and powerful | Correct. This is a low angle.
+      [ ] Small and weak | That is a high angle.
+      [ ] Far away | That is a long shot.
+      [ ] Normal and fair | That is eye level.
+
+   .. multichoice::
+
+      Which is a **symbolic** code?
+
+      [ ] A zoom | A zoom is a technical code.
+      [ ] The slogan "Visit us" | Words are written codes.
+      [x] A dark, stormy sky | Correct. It suggests danger or sadness.
+      [ ] A cut | A cut is a technical code.
+
+   .. multichoice::
+
       Which early device spins a disc with a different picture on each side?
 
       [x] Thaumatrope | Correct.
@@ -171,6 +224,9 @@ Crossword
    ARC          | A curved path of movement
    KEYFRAME     | An important frame at the start or end of a movement
    SQUASH       | What a ball does when it hits the ground
+   CLOSURE      | The ending of a story
+   CLOSEUP      | A shot where a face fills the frame (two words joined)
+   PAN          | A camera move that slides sideways across a scene
 
 Word search
 -----------
@@ -193,3 +249,9 @@ Word search
    TIMING
    EASING
    PHOTOSHOP
+   OPENING
+   CLOSURE
+   CLIMAX
+   PAN
+   ZOOM
+   FADE

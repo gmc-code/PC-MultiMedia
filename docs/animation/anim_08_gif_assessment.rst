@@ -99,6 +99,9 @@ Answer these questions in your planning document.
 #. Find **two** GIFs or animated banners made by other people. For each one, write
    what works well and what you would change.
 #. What message or feeling should your GIF give?
+#. Fill in the **plan your story** table from :doc:`anim_06_telling_a_story`:
+   opening, development, closure, cause and effect, and the colours, setting,
+   props and text you will use.
 
 Step 2: Storyboard
 ------------------
@@ -108,9 +111,15 @@ like a comic strip. Use ``storyboard_template.pdf`` from the student kit.
 
 For each panel, draw the scene and write:
 
-* what is moving and which way (use arrows)
+* the shot size (ELS, LS, MS, CU or ECU) and angle
+* what is moving and which way (use arrows), including any pan or zoom
 * any text that appears
+* the transition to the next panel (cut, fade or dissolve)
 * roughly how long it lasts
+
+See :doc:`anim_07_shots_and_angles` for an example of a labelled storyboard.
+Make sure your storyboard has a clear **opening**, **development** and
+**closure**, and that the last panel leads back into the first.
 
 .. figure:: images/storyboard_example.svg
    :width: 100%
@@ -158,7 +167,7 @@ Rubric
    * - **Planning** (storyboard and investigation)
      - Plan is missing or does not match the GIF
      - One storyboard with some detail
-     - Clear storyboard with movement, text and timing shown
+     - Clear storyboard with an opening, development and closure; shot sizes, movement, text and timing shown
      - Two well-developed ideas; clear reasons for the final choice
    * - **Production** (Photoshop skills)
      - Few frames; movement is jerky
@@ -169,7 +178,7 @@ Rubric
      - Does not meet the brief
      - Meets some requirements
      - Meets all requirements; message is clear for the audience
-     - Creative, eye-catching response; strong sense of purpose and audience
+     - Creative, eye-catching response; tells a clear story; strong sense of purpose and audience
    * - **Evaluation** (reflection)
      - Very brief answers
      - Describes what was made

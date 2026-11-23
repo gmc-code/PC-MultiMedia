@@ -741,34 +741,63 @@ Types of animation
 
 .. list-table::
    :header-rows: 1
-   :widths: 25 45 30
+   :widths: 18 30 20 32
 
    * - Type
      - How it is made
      - Example of where you see it
+     - Watch examples
    * - **Traditional (2D hand-drawn)**
      - Every frame is drawn by hand, on paper or on a screen.
      - Classic cartoons, anime
+     - * `Fantasmagorie (1908) <https://www.youtube.com/watch?v=o1d28X0lkJ4>`__:
+         one of the first hand-drawn cartoons
+       * `Wolfwalkers trailer (Cartoon Saloon, 2020) <https://www.youtube.com/watch?v=d_Z_tybgPgg>`__:
+         a modern hand-drawn feature film
    * - **Stop motion**
      - Real objects (clay, toys, paper) are moved a tiny bit and photographed
        one frame at a time.
      - Claymation films, LEGO films
+     - * `A Boy and His Atom (IBM, 2013) <https://www.youtube.com/watch?v=oSCX78-8-q0>`__:
+         the world's smallest stop motion film, made by moving single molecules
+       * `Wallace & Gromit: Vengeance Most Fowl trailer (Aardman, 2024) <https://www.youtube.com/watch?v=HSbtlgo888w>`__:
+         clay models moved and photographed frame by frame
    * - **Cut-out**
      - Flat shapes are moved around and photographed or moved on a computer.
      - Some children's TV shows
+     - * `The Secret of the Marquise (Lotte Reiniger, 1922) <https://www.youtube.com/watch?v=4e5ZDfKokQ8>`__:
+         paper cut-out silhouettes
+       * `John Butler Trio, Spring To Come (2014) <https://www.youtube.com/watch?v=TkAwkxaFROM>`__:
+         an Australian music video made from over 300 paper cut-outs
    * - **2D digital (vector)**
      - Shapes are drawn on a computer. The computer can fill in the movement
        between key poses.
      - Explainer videos, web cartoons
+     - * `How to Make a Kurzgesagt Video <https://www.youtube.com/watch?v=uFk0mgljtns>`__:
+         vector animation, and how it is made
+       * `Busy (Not Boring) with #Bluey & #Bingo  ABC Kids <https://www.youtube.com/watch?v=iT_knZpdhEE>`__:
+         a full episode of an Australian 2D digital cartoon
    * - **3D computer (CGI)**
      - Models are built in 3D software, then moved and lit like a film set.
      - Pixar films, video games
+     - * `Big Buck Bunny (Blender, 2008) <https://www.youtube.com/watch?v=YE7VzlLtp-4>`__:
+         a 3D short made with free software
+       * `Inside Out 2 trailer (Pixar, 2024) <https://www.youtube.com/watch?v=LEjhY15eCx0>`__:
+         a modern 3D feature film
    * - **Motion graphics**
      - Text, logos and shapes are animated to give information.
      - TV news titles, adverts, social media
+     - * `Kinetic Typography Video | Cinthya Studios <https://www.youtube.com/watch?v=A0CKFb24MJ8>`__:
+         words that move in time with a voice
+       * `Tokyo 2020 Kinetic Sports Pictograms <https://www.youtube.com/watch?v=0Wmwc8u98lI>`__:
+         the first animated Olympic sport symbols
    * - **Rotoscoping**
      - Animators trace over real video, frame by frame.
      - Music videos, some feature films
+     - * `a-ha, Take On Me (1985) <https://www.youtube.com/watch?v=djV11Xbc914>`__:
+         pencil drawings traced over filmed actors
+       * `Loving Vincent trailer (2017) <https://www.youtube.com/watch?v=Gy0RVDM1sNA>`__:
+         actors filmed, then painted over in oil paint, frame by frame
 
 .. classifying::
    :delimiter: =>
