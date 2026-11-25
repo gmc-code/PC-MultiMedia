@@ -6,7 +6,7 @@ A **flip book** is a little book with a slightly different drawing on every page
 Flick the pages quickly and the drawing moves. Each page is one **frame**, just
 like the frames in an animated GIF.
 
-In this activity you will put together two Christmas flip books, then draw your
+In this activity you will put together a Christmas flip book, then draw your
 own on a template with guide lines to help you.
 
 .. admonition:: You need
@@ -117,8 +117,113 @@ Steps
    card 24 (end).
 #. **Draw the in-betweens.** Do card 6 (first in-between), then card 17 (second in-between).
    Then do card 3, card 9, card 15 and card 21. Then do the rest. This is called **in-betweening**.
+   The worked example below shows each stage.
 #. **Test it.** Clip the cards together and flick. Fix any jumps.
 #. **Finish** in pen and colour. Keep the colours the same on every card.
+
+Worked example: a stick figure walking
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Here are the steps above used to make a stick figure walk from left to right
+across the blank template.
+
+Each GIF plays like a **pencil test**: a card that hasn't been drawn yet just shows
+the last card that has. You can see the walk get smoother at every stage.
+
+In each diagram, the line at the top shows **where the figure is** on each card
+that has been drawn. Red is a key frame, orange is drawn in that stage and grey
+was drawn earlier.
+
+**Stage 0: the blank template**
+
+Every card has the same ground line, dot grid and centre mark. Nothing moves yet.
+
+.. figure:: flipbook/flipbook_demo_0_blank.gif
+   :class: clickgif clickgif-ms-2400
+   :width: 420px
+   :alt: The 24 blank template cards, each with a dot grid, a centre mark and a ground line
+
+   The blank template: 24 cards with guide lines and no drawing.
+
+**Stage 1: draw the key frames (cards 1, 12 and 24)**
+
+Draw the figure at the **start** (card 1, left side), the **middle** (card 12,
+in the centre) and the **end** (card 24, right side). Its feet sit on the ground
+line on every card.
+
+.. figure:: flipbook/flipbook_demo_1_keys.svg
+   :width: 100%
+   :alt: Diagram of the 24 cards with only cards 1, 12 and 24 drawn; the spacing line shows three big jumps
+
+   Only the key frames are drawn. The figure jumps a long way between them.
+
+.. figure:: flipbook/flipbook_demo_1_keys.gif
+   :class: clickgif clickgif-ms-2400
+   :width: 420px
+   :alt: Pencil test with only 3 drawings: the stick figure jumps from the left, to the centre, to the right
+
+   Pencil test with 3 drawings. It jumps, it doesn't walk.
+
+**Stage 2: draw the first in-betweens (cards 6 and 17)**
+
+Card 6 goes about **halfway** between card 1 and card 12. Card 17 goes about
+halfway between card 12 and card 24.
+
+.. figure:: flipbook/flipbook_demo_2_first_inbetweens.svg
+   :width: 100%
+   :alt: Diagram with cards 1, 6, 12, 17 and 24 drawn; cards 6 and 17 are highlighted as new
+
+   Cards 6 and 17 split each big gap in half.
+
+.. figure:: flipbook/flipbook_demo_2_first_inbetweens.gif
+   :class: clickgif clickgif-ms-2400
+   :width: 420px
+   :alt: Pencil test with 5 drawings: the stick figure still moves in big jumps
+
+   Pencil test with 5 drawings. Smaller jumps, but still jerky.
+
+**Stage 3: draw the next in-betweens (cards 3, 9, 15 and 21)**
+
+Each new card goes halfway between the two drawn cards on either side of it.
+
+.. figure:: flipbook/flipbook_demo_3_second_inbetweens.svg
+   :width: 100%
+   :alt: Diagram with cards 1, 3, 6, 9, 12, 15, 17, 21 and 24 drawn; cards 3, 9, 15 and 21 are highlighted as new
+
+   Cards 3, 9, 15 and 21 split the gaps again.
+
+.. figure:: flipbook/flipbook_demo_3_second_inbetweens.gif
+   :class: clickgif clickgif-ms-2400
+   :width: 420px
+   :alt: Pencil test with 9 drawings: the stick figure moves across in smaller steps
+
+   Pencil test with 9 drawings. It is starting to look like walking.
+
+**Stage 4: draw all the rest**
+
+Fill in every card that is left. The figure moves the **same distance** on
+every card (about half a dot), so it walks at a steady speed.
+
+.. figure:: flipbook/flipbook_demo_4_all.svg
+   :width: 100%
+   :alt: Diagram with all 24 cards drawn; the spacing line has evenly spaced marks
+
+   All 24 cards are drawn. The marks on the spacing line are evenly spaced.
+
+.. figure:: flipbook/flipbook_demo_4_all.gif
+   :class: clickgif clickgif-ms-2400
+   :width: 420px
+   :alt: The finished flip book: the stick figure walks smoothly from left to right, legs and arms swinging
+
+   The finished walk: 24 drawings, played at 12 pages a second.
+
+**Things to notice:**
+
+* The legs go **apart, together, apart, together**. Legs apart is a step; legs
+  together is the moment one leg passes the other.
+* The arms swing the **opposite** way to the legs.
+* When the legs are together, the body is a little **higher**. This small bob
+  up and down makes the walk look real.
 
 .. tip::
 

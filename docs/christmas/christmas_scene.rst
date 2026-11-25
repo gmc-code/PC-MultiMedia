@@ -36,16 +36,10 @@ Click a picture to bring it to life.
     penguin.gif | Penguin | x=75.6 y=95.5 width=7.5 seconds=4 move=left
     snowball.gif | Snowball | x=9.4 y=89.6 width=5 seconds=7 move=right
 
-The sleigh, the shooting star, the elves, the penguin and the snowball have ``move=`` on
-their lines, so they travel across the scene when they are clicked.
-
 ----
 
 As a grid
 ---------------
-
-Leave out ``:background:`` and the pictures are set out as cards. This one uses
-``:play: toggle``, so a click starts a picture and another click stops it.
 
 .. gifscene::
    :theme: christmas
@@ -91,7 +85,7 @@ Get the kit ready
 
 #. Download the kit.
 #. Find it in your **Downloads** folder. Right-click it and choose **Extract All**.
-#. Open the new ``christmas_student_kit`` folder. You should see this:
+#. Open the ``christmas_student_kit`` folder. You should see this:
 
 .. list-table::
    :header-rows: 1
@@ -277,11 +271,11 @@ Step 1: Paint two sets of lights
 
 #. In Photoshop, click **File > Open** and open ``tree_plain.png`` from the
    ``photoshop_frames`` folder.
-#. Click **Layer > New > Layer...** Name it ``lights 1`` and click **OK**.
+#. Click **Layer > New > Layer...** Name it ``lights_1`` and click **OK**.
 #. Choose the **Brush** tool (press **B**). Pick a bright colour and a round
    brush about 14 pixels wide.
 #. Click on the tree to paint 6 or 7 lights.
-#. Make another new layer. Name it ``lights 2``.
+#. Make another new layer. Name it ``lights_2``.
 #. Pick a different colour. Paint 6 or 7 lights in **different** places.
 
 Step 2: Make the frames
@@ -290,10 +284,10 @@ Step 2: Make the frames
 #. Open the Timeline (**Window > Timeline**) and click **Create Frame
    Animation**, the same way as in Part 1.
 #. You have one frame. In the Layers panel, click the **eye** next to
-   ``lights 2`` to hide it. Frame 1 now shows only the first set of lights.
+   ``lights_2`` to hide it. Frame 1 now shows only the first set of lights.
 #. At the bottom of the Timeline, click **Duplicate selected frames** (the
    square with a plus sign). This makes frame 2.
-#. With frame 2 selected, hide ``lights 1`` and show ``lights 2``.
+#. With frame 2 selected, hide ``lights_1`` and show ``lights_2``.
 #. Select all the frames and set the delay to **0.5** seconds. Set looping to
    **Forever**.
 #. Press **Play** to check it.
