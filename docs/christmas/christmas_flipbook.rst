@@ -117,7 +117,7 @@ Steps
    card 24 (end).
 #. **Draw the in-betweens.** Do card 6 (first in-between), then card 17 (second in-between).
    Then do card 3, card 9, card 15 and card 21. Then do the rest. This is called **in-betweening**.
-   The worked example below shows each stage.
+   The two worked examples below show each stage.
 #. **Test it.** Clip the cards together and flick. Fix any jumps.
 #. **Finish** in pen and colour. Keep the colours the same on every card.
 
@@ -224,6 +224,110 @@ every card (about half a dot), so it walks at a steady speed.
 * The arms swing the **opposite** way to the legs.
 * When the legs are together, the body is a little **higher**. This small bob
   up and down makes the walk look real.
+
+Worked example: three shapes changing
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A flip book doesn't have to show something walking. Here, three shapes each
+change in a different way, all on the same 24 cards:
+
+* the **circle moves**: it travels from left to right along an arc, and changes
+  **colour** from red to yellow
+* the **square changes size**: it grows from small to big and turns a quarter
+  turn. It starts slowly, speeds up, then slows down at the end
+* the **triangle changes shape**: it slowly turns into a circle, and changes
+  **colour** from green to purple
+
+The charts at the top of each diagram show **how far each change has got** on
+every drawn card, from the start (left) to the end (right).
+
+**Stage 1: draw the key frames (cards 1, 12 and 24)**
+
+Draw all three shapes at the **start** (card 1), the **middle** (card 12) and the
+**end** (card 24). Check that card 12 really is halfway for every change: the
+circle is at the top of its arc, the square has turned half of its quarter turn
+and the triangle is halfway to being a circle.
+
+.. figure:: flipbook/flipbook_shapes_1_keys.svg
+   :width: 100%
+   :alt: Diagram with only cards 1, 12 and 24 drawn; three charts show where each change is on those cards
+
+   Only the key frames are drawn. Every change jumps.
+
+.. figure:: flipbook/flipbook_shapes_1_keys.gif
+   :class: clickgif clickgif-ms-2400
+   :width: 420px
+   :alt: Pencil test with 3 drawings: the shapes jump between the start, middle and end
+
+   Pencil test with 3 drawings.
+
+**Stage 2: draw the first in-betweens (cards 6 and 17)**
+
+For the circle and the triangle, card 6 is about **halfway** between card 1 and
+card 12. The square is different: it starts **slowly**, so on card 6 it has
+only grown a little. Look at the square's chart: its mark for card 6 is much
+closer to the start.
+
+.. figure:: flipbook/flipbook_shapes_2_first_inbetweens.svg
+   :width: 100%
+   :alt: Diagram with cards 1, 6, 12, 17 and 24 drawn; on the square chart, card 6 is close to the start and card 17 close to the end
+
+   Cards 6 and 17. The square's marks sit near the ends of its chart because it changes slowly there.
+
+.. figure:: flipbook/flipbook_shapes_2_first_inbetweens.gif
+   :class: clickgif clickgif-ms-2400
+   :width: 420px
+   :alt: Pencil test with 5 drawings: the shapes still change in big jumps
+
+   Pencil test with 5 drawings.
+
+**Stage 3: draw the next in-betweens (cards 3, 9, 15 and 21)**
+
+Each new card goes between the two drawn cards on either side of it. The square
+changes only a tiny bit on cards 3 and 21, and a lot on cards 9 and 15.
+
+.. figure:: flipbook/flipbook_shapes_3_second_inbetweens.svg
+   :width: 100%
+   :alt: Diagram with cards 1, 3, 6, 9, 12, 15, 17, 21 and 24 drawn, with cards 3, 9, 15 and 21 highlighted as new
+
+   Cards 3, 9, 15 and 21 split the gaps again.
+
+.. figure:: flipbook/flipbook_shapes_3_second_inbetweens.gif
+   :class: clickgif clickgif-ms-2400
+   :width: 420px
+   :alt: Pencil test with 9 drawings: the changes are starting to look smooth
+
+   Pencil test with 9 drawings.
+
+**Stage 4: draw all the rest**
+
+Fill in every card that is left, then play it.
+
+.. figure:: flipbook/flipbook_shapes_4_all.svg
+   :width: 100%
+   :alt: Diagram with all 24 cards drawn; the circle and triangle charts have evenly spaced marks, the square chart has marks bunched at both ends
+
+   All 24 cards. Even spacing gives a steady change; bunched-up marks give a slow change.
+
+.. figure:: flipbook/flipbook_shapes_4_all.gif
+   :class: clickgif clickgif-ms-2400
+   :width: 420px
+   :alt: The finished flip book: a circle arcs across and turns from red to yellow, a square grows and turns, and a triangle becomes a purple circle
+
+   The finished shapes: 24 drawings, played at 12 pages a second.
+
+**Things to notice:**
+
+* **Even spacing** (the circle and the triangle) makes a change happen at a
+  steady speed.
+* **Bunched-up spacing** (the square at the start and end) makes a change
+  happen slowly. Spread-out spacing makes it happen quickly. Animators call
+  this **slow in and slow out** (also called easing).
+* Colour changes need in-betweens too: card 12 is halfway between the start
+  colour and the end colour.
+* Keep every shape in the same place when it isn't meant to move. The square
+  stays on the ground line and the triangle stays in the same spot while it
+  changes.
 
 .. tip::
 
