@@ -117,7 +117,7 @@ Steps
    card 24 (end).
 #. **Draw the in-betweens.** Do card 6 (first in-between), then card 17 (second in-between).
    Then do card 3, card 9, card 15 and card 21. Then do the rest. This is called **in-betweening**.
-   The two worked examples below show each stage.
+   The two worked examples below show each step.
 #. **Test it.** Clip the cards together and flick. Fix any jumps.
 #. **Finish** in pen and colour. Keep the colours the same on every card.
 
@@ -128,13 +128,21 @@ Here are the steps above used to make a stick figure walk from left to right
 across the blank template.
 
 Each GIF plays like a **pencil test**: a card that hasn't been drawn yet just shows
-the last card that has. You can see the walk get smoother at every stage.
+the last card that has. You can see the walk get smoother at every step.
 
 In each diagram, the line at the top shows **where the figure is** on each card
-that has been drawn. Red is a key frame, orange is drawn in that stage and grey
-was drawn earlier.
+that has been drawn. Each step has its own colour and marker, and the marks get
+shorter at each step:
 
-**Stage 0: the blank template**
+* **step 1**: key frames 1, 12 and 24 (red circles, tallest marks)
+* **step 2**: cards 6 and 17 (orange diamonds)
+* **step 3**: cards 3, 9, 15 and 21 (blue squares)
+* **step 4**: all the rest (green triangles, shortest marks)
+
+The cards drawn in that step have a thick outline and a light tint. Dashed cards
+haven't been drawn yet. The GIFs label every card with its step too.
+
+**Start: the blank template**
 
 Every card has the same ground line, dot grid and centre mark. Nothing moves yet.
 
@@ -145,7 +153,7 @@ Every card has the same ground line, dot grid and centre mark. Nothing moves yet
 
    The blank template: 24 cards with guide lines and no drawing.
 
-**Stage 1: draw the key frames (cards 1, 12 and 24)**
+**Step 1: draw the key frames (cards 1, 12 and 24)**
 
 Draw the figure at the **start** (card 1, left side), the **middle** (card 12,
 in the centre) and the **end** (card 24, right side). Its feet sit on the ground
@@ -164,7 +172,7 @@ line on every card.
 
    Pencil test with 3 drawings. It jumps, it doesn't walk.
 
-**Stage 2: draw the first in-betweens (cards 6 and 17)**
+**Step 2: draw the first in-betweens (cards 6 and 17)**
 
 Card 6 goes about **halfway** between card 1 and card 12. Card 17 goes about
 halfway between card 12 and card 24.
@@ -182,7 +190,7 @@ halfway between card 12 and card 24.
 
    Pencil test with 5 drawings. Smaller jumps, but still jerky.
 
-**Stage 3: draw the next in-betweens (cards 3, 9, 15 and 21)**
+**Step 3: draw the next in-betweens (cards 3, 9, 15 and 21)**
 
 Each new card goes halfway between the two drawn cards on either side of it.
 
@@ -199,7 +207,7 @@ Each new card goes halfway between the two drawn cards on either side of it.
 
    Pencil test with 9 drawings. It is starting to look like walking.
 
-**Stage 4: draw all the rest**
+**Step 4: draw all the rest**
 
 Fill in every card that is left. The figure moves the **same distance** on
 every card (about half a dot), so it walks at a steady speed.
@@ -239,9 +247,10 @@ change in a different way, all on the same 24 cards:
   **colour** from green to purple
 
 The charts at the top of each diagram show **how far each change has got** on
-every drawn card, from the start (left) to the end (right).
+every drawn card, from the start (left) to the end (right). The step colours and
+markers are the same as in the stick figure example.
 
-**Stage 1: draw the key frames (cards 1, 12 and 24)**
+**Step 1: draw the key frames (cards 1, 12 and 24)**
 
 Draw all three shapes at the **start** (card 1), the **middle** (card 12) and the
 **end** (card 24). Check that card 12 really is halfway for every change: the
@@ -261,7 +270,7 @@ and the triangle is halfway to being a circle.
 
    Pencil test with 3 drawings.
 
-**Stage 2: draw the first in-betweens (cards 6 and 17)**
+**Step 2: draw the first in-betweens (cards 6 and 17)**
 
 For the circle and the triangle, card 6 is about **halfway** between card 1 and
 card 12. The square is different: it starts **slowly**, so on card 6 it has
@@ -281,7 +290,7 @@ closer to the start.
 
    Pencil test with 5 drawings.
 
-**Stage 3: draw the next in-betweens (cards 3, 9, 15 and 21)**
+**Step 3: draw the next in-betweens (cards 3, 9, 15 and 21)**
 
 Each new card goes between the two drawn cards on either side of it. The square
 changes only a tiny bit on cards 3 and 21, and a lot on cards 9 and 15.
@@ -299,7 +308,7 @@ changes only a tiny bit on cards 3 and 21, and a lot on cards 9 and 15.
 
    Pencil test with 9 drawings.
 
-**Stage 4: draw all the rest**
+**Step 4: draw all the rest**
 
 Fill in every card that is left, then play it.
 
